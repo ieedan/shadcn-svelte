@@ -100,6 +100,8 @@ export async function fetchTree(config: Config, tree: RegistryIndex) {
 		const paths = tree.map((item) => `styles/${trueStyle}/${item.name}.json`);
 		const result = await fetchRegistry(paths);
 
+		console.log(paths);
+
 		return v.parse(schemas.registryWithContentSchema, result);
 	} catch {
 		throw error(`Failed to fetch tree from registry.`);

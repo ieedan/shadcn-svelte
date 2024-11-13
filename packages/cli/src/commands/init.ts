@@ -22,6 +22,7 @@ import { syncSvelteKit } from "../utils/sveltekit.js";
 import * as templates from "../utils/templates.js";
 import { resolveCommand } from "package-manager-detector/commands";
 import { SITE_BASE_URL } from "../constants.js";
+import { Project } from "ts-morph";
 
 const PROJECT_DEPENDENCIES = [
 	"tailwind-variants",
@@ -362,6 +363,15 @@ export async function runInit(cwd: string, config: Config, options: InitOptions)
 			}
 
 			// Write tailwind config.
+
+			const project = new Project();
+
+			const tailwindConfig = project.addSourceFileAtPath(config.resolvedPaths.tailwindConfig);
+
+			const configDefaultExport = tailwindConfig.getDefaultExportSymbol();
+
+			console.log(configDefaultExport);
+
 			const { TS, JS } = templates.TAILWIND_CONFIG_WITH_VARIABLES;
 			const tailwindConfigContent = config.resolvedPaths.tailwindConfig.endsWith(".ts")
 				? TS

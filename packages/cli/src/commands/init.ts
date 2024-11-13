@@ -22,7 +22,7 @@ import { syncSvelteKit } from "../utils/sveltekit.js";
 import * as templates from "../utils/templates.js";
 import { resolveCommand } from "package-manager-detector/commands";
 import { SITE_BASE_URL } from "../constants.js";
-import { Project } from "ts-morph";
+import { ImportDeclarationStructure, OptionalKind, Project, SyntaxKind } from "ts-morph";
 
 const PROJECT_DEPENDENCIES = [
 	"tailwind-variants",
@@ -364,19 +364,97 @@ export async function runInit(cwd: string, config: Config, options: InitOptions)
 
 			// Write tailwind config.
 
+			const isTypeScript = config.resolvedPaths.tailwindConfig.endsWith("ts");
+
 			const project = new Project();
 
 			const tailwindConfig = project.addSourceFileAtPath(config.resolvedPaths.tailwindConfig);
 
 			const configDefaultExport = tailwindConfig.getDefaultExportSymbol();
 
-			console.log(configDefaultExport);
+			if (!configDefaultExport) {
+				// maybe here it would be better to ask if they would like to overwrite the tailwind config with a valid config
+				throw error(
+					`Invalid tailwind config! A tailwind config must provide a default export.`
+				);
+			}
 
-			const { TS, JS } = templates.TAILWIND_CONFIG_WITH_VARIABLES;
-			const tailwindConfigContent = config.resolvedPaths.tailwindConfig.endsWith(".ts")
-				? TS
-				: JS;
-			await fs.writeFile(config.resolvedPaths.tailwindConfig, tailwindConfigContent, "utf8");
+			const addedImports: Map<string, OptionalKind<ImportDeclarationStructure>> = new Map();
+
+			addedImports.set("tailwindcss-animate", {
+				moduleSpecifier: "tailwindcss-animate",
+				defaultImport: "tailwindcssAnimate",
+			});
+
+			const imports = tailwindConfig.getImportDeclarations();
+
+			for (const imp of imports) {
+				const specifier = imp.getModuleSpecifierValue();
+
+				const addedImport = addedImports.get(specifier);
+
+				if (!addedImport) continue;
+
+				addedImports.delete(specifier);
+
+				if (addedImport.defaultImport) {
+					imp.setDefaultImport(addedImport.defaultImport);
+				}
+
+				// this is here in case we have named imports later on
+				// it would also be nice to handle type only imports here
+				if (addedImport.namedImports && Array.isArray(addedImport.namedImports)) {
+					for (const namedImport of imp.getNamedImports()) {
+						const importIndex = addedImport.namedImports.findIndex(
+							(i) => i === namedImport.getName()
+						);
+
+						if (importIndex === -1) continue;
+
+						addedImport.namedImports = [
+							...addedImport.namedImports.slice(0, importIndex),
+							...addedImport.namedImports.slice(importIndex + 1),
+						];
+					}
+
+					for (const namedImport of addedImport.namedImports) {
+						imp.addNamedImport(namedImport);
+					}
+				}
+			}
+
+			// add imports that are not yet added
+			for (const [_, addedImport] of addedImports) {
+				tailwindConfig.addImportDeclaration(addedImport);
+			}
+
+			// console.log(configDefaultExport);
+
+			const valueDeclaration = configDefaultExport.getValueDeclaration();
+
+			if (!valueDeclaration) {
+				throw error(`Invalid tailwind config! The default export is undefined.`);
+			}
+
+			console.log(valueDeclaration.getKind());
+
+			const expr = tailwindConfig
+				.getFirstChildByKind(SyntaxKind.ExportAssignment)
+				?.getExpression();
+
+			console.log(expr?.getText());
+
+			const satExpr = expr?.asKind(SyntaxKind.SatisfiesExpression);
+
+			console.log(satExpr?.getExpression().getText());
+
+			tailwindConfig.saveSync();
+
+			// const { TS, JS } = templates.TAILWIND_CONFIG_WITH_VARIABLES;
+			// const tailwindConfigContent = config.resolvedPaths.tailwindConfig.endsWith(".ts")
+			// 	? TS
+			// 	: JS;
+			// await fs.writeFile(config.resolvedPaths.tailwindConfig, tailwindConfigContent, "utf8");
 
 			// Write css file.
 			const baseColor = await registry.getRegistryBaseColor(config.tailwind.baseColor);

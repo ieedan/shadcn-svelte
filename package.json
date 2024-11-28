@@ -22,7 +22,8 @@
 		"postinstall": "pnpm -r sync",
 		"ci:publish": "changeset publish",
 		"ci:build": "pnpm build:cli",
-		"ci:release": "pnpm ci:build && pnpm ci:publish"
+		"ci:release": "pnpm ci:build && pnpm ci:publish",
+		"build:jsrepo": "jsrepo build --dirs ./sites/docs/src/lib/registry/default"
 	},
 	"engines": {
 		"pnpm": ">=9",
@@ -46,6 +47,7 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.44.1",
 		"globals": "^15.11.0",
+		"jsrepo": "^1.12.2",
 		"prettier": "^3.3.3",
 		"prettier-plugin-svelte": "^3.2.7",
 		"prettier-plugin-tailwindcss": "^0.6.8",

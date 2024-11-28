@@ -1,0 +1,3438 @@
+[
+	{
+		"name": "block",
+		"blocks": [
+			{
+				"name": "authentication-01",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"authentication-01.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "authentication-02",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"authentication-02.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "authentication-03",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"authentication-03.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "authentication-04",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"authentication-04.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "dashboard-01",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dashboard-01.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "dashboard-02",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dashboard-02.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "dashboard-03",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dashboard-03.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "dashboard-04",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dashboard-04.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "dashboard-05",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dashboard-05.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "dashboard-06",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dashboard-06.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "dashboard-07",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dashboard-07.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "demo-sidebar-controlled",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar-controlled.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "demo-sidebar-footer",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar-footer.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "demo-sidebar-group-action",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar-group-action.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"svelte-sonner@^0.3.25"
+				]
+			},
+			{
+				"name": "demo-sidebar-group-collapsible",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar-group-collapsible.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "demo-sidebar-group",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar-group.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "demo-sidebar-header",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar-header.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "demo-sidebar-menu-action",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar-menu-action.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "demo-sidebar-menu-badge",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar-menu-badge.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "demo-sidebar-menu-collapsible",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar-menu-collapsible.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "demo-sidebar-menu-sub",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar-menu-sub.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "demo-sidebar-menu",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar-menu.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "demo-sidebar",
+				"directory": "sites/docs/src/lib/registry/default/block",
+				"category": "block",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"demo-sidebar.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "login-01",
+				"directory": "sites/docs/src/lib/registry/default/block/login-01",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-01",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-01",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-02",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-02",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-03",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-03",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-04",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-04",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-05",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-05",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-06",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-06",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-07",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-07",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-08",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-08",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-09",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-09",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-10",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-10",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-11",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-11",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-12",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-12",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-13",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-13",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-14",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-14",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sidebar-15",
+				"directory": "sites/docs/src/lib/registry/default/block/sidebar-15",
+				"category": "block",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"+page.svelte",
+					"components"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			}
+		]
+	},
+	{
+		"name": "example",
+		"blocks": [
+			{
+				"name": "accordion-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"accordion-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "alert-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"alert-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "alert-destructive",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"alert-destructive.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "alert-dialog-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"alert-dialog-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "aspect-ratio-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"aspect-ratio-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "avatar-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"avatar-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "badge-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"badge-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "badge-destructive",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"badge-destructive.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "badge-outline",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"badge-outline.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "badge-secondary",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"badge-secondary.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "breadcrumb-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"breadcrumb-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "breadcrumb-dropdown",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"breadcrumb-dropdown.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "breadcrumb-ellipsis",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"breadcrumb-ellipsis.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "breadcrumb-link",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"breadcrumb-link.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "breadcrumb-responsive",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"breadcrumb-responsive.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"runed@^0.15.2"
+				]
+			},
+			{
+				"name": "breadcrumb-separator",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"breadcrumb-separator.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "button-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"button-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "button-destructive",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"button-destructive.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "button-ghost",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"button-ghost.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "button-icon",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"button-icon.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "button-link",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"button-link.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "button-loading",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"button-loading.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "button-outline",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"button-outline.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "button-secondary",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"button-secondary.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "button-with-icon",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"button-with-icon.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "calendar-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"calendar-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"@internationalized/date@^3.5.6"
+				]
+			},
+			{
+				"name": "calendar-with-selects",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"calendar-with-selects.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"@internationalized/date@^3.5.6"
+				]
+			},
+			{
+				"name": "card-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"card-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "card-with-form",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"card-with-form.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "cards",
+				"directory": "sites/docs/src/lib/registry/default/example/cards",
+				"category": "example",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"activity-goal.svelte",
+					"all.svelte",
+					"calendar.svelte",
+					"chat.svelte",
+					"cookie-settings.svelte",
+					"create-account.svelte",
+					"data-table.svelte",
+					"github.svelte",
+					"index.ts",
+					"metric.svelte",
+					"notifications.svelte",
+					"payment-method.svelte",
+					"report-issue.svelte",
+					"share.svelte",
+					"stats.svelte",
+					"team-members.svelte"
+				],
+				"localDependencies": [
+					"example/data-table"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"@internationalized/date@^3.5.6",
+					"@tanstack/table-core@^8.20.5",
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "carousel-api",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"carousel-api.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "carousel-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"carousel-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "carousel-orientation",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"carousel-orientation.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "carousel-plugin",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"carousel-plugin.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"embla-carousel-autoplay@8.1.6"
+				]
+			},
+			{
+				"name": "carousel-size",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"carousel-size.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "carousel-spacing",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"carousel-spacing.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "checkbox-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"checkbox-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "checkbox-disabled",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"checkbox-disabled.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "checkbox-form-multiple",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"checkbox-form-multiple.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"sveltekit-superforms@^2.19.1",
+					"svelte-sonner@^0.3.25"
+				]
+			},
+			{
+				"name": "checkbox-form-single",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"checkbox-form-single.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"sveltekit-superforms@^2.19.1",
+					"svelte-sonner@^0.3.25"
+				]
+			},
+			{
+				"name": "checkbox-with-text",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"checkbox-with-text.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "collapsible-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"collapsible-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "combobox-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"combobox-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "combobox-dropdown-menu",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"combobox-dropdown-menu.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "combobox-form",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"combobox-form.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"sveltekit-superforms@^2.19.1",
+					"lucide-svelte@^0.447.0",
+					"svelte-sonner@^0.3.25",
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "combobox-popover",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"combobox-popover.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "command-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"command-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "command-dialog",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"command-dialog.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "context-menu-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"context-menu-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "dark-mode-dropdown-menu",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dark-mode-dropdown-menu.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"mode-watcher@^0.3.1"
+				]
+			},
+			{
+				"name": "dark-mode-light-switch",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dark-mode-light-switch.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"mode-watcher@^0.3.1"
+				]
+			},
+			{
+				"name": "data-table",
+				"directory": "sites/docs/src/lib/registry/default/example/data-table",
+				"category": "example",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"data-table-actions.svelte",
+					"data-table-checkbox.svelte",
+					"data-table-email-button.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "data-table-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"data-table-demo.svelte"
+				],
+				"localDependencies": [
+					"example/data-table"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"@tanstack/table-core@^8.20.5"
+				]
+			},
+			{
+				"name": "date-picker-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"date-picker-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"@internationalized/date@^3.5.6"
+				]
+			},
+			{
+				"name": "date-picker-form",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"date-picker-form.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"@internationalized/date@^3.5.6",
+					"sveltekit-superforms@^2.19.1",
+					"svelte-sonner@^0.3.25"
+				]
+			},
+			{
+				"name": "date-picker-with-presets",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"date-picker-with-presets.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"@internationalized/date@^3.5.6"
+				]
+			},
+			{
+				"name": "date-picker-with-range",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"date-picker-with-range.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"bits-ui@1.0.0-next.63",
+					"@internationalized/date@^3.5.6"
+				]
+			},
+			{
+				"name": "dialog-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dialog-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "drawer-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"drawer-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"@unovis/svelte@1.4.3"
+				]
+			},
+			{
+				"name": "drawer-dialog",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"drawer-dialog.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"runed@^0.15.2"
+				]
+			},
+			{
+				"name": "dropdown-menu-checkboxes",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dropdown-menu-checkboxes.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "dropdown-menu-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dropdown-menu-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "dropdown-menu-radio-group",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dropdown-menu-radio-group.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "form-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"form-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"sveltekit-superforms@^2.19.1",
+					"svelte-sonner@^0.3.25"
+				]
+			},
+			{
+				"name": "hover-card-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"hover-card-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "index",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "input-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"input-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "input-disabled",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"input-disabled.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "input-file",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"input-file.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "input-otp-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"input-otp-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "input-otp-form",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"input-otp-form.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"sveltekit-superforms@^2.19.1",
+					"svelte-sonner@^0.3.25"
+				]
+			},
+			{
+				"name": "input-otp-pattern",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"input-otp-pattern.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "input-otp-separator",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"input-otp-separator.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "input-with-button",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"input-with-button.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "input-with-label",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"input-with-label.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "input-with-text",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"input-with-text.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "label-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"label-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "menubar-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"menubar-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "pagination-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"pagination-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"runed@^0.15.2"
+				]
+			},
+			{
+				"name": "popover-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"popover-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "progress-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"progress-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "radio-group-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"radio-group-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "radio-group-form",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"radio-group-form.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"sveltekit-superforms@^2.19.1",
+					"svelte-sonner@^0.3.25"
+				]
+			},
+			{
+				"name": "range-calendar-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"range-calendar-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"@internationalized/date@^3.5.6"
+				]
+			},
+			{
+				"name": "resizable-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"resizable-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "resizable-handle",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"resizable-handle.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "resizable-vertical",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"resizable-vertical.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "scroll-area-both",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"scroll-area-both.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "scroll-area-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"scroll-area-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "scroll-area-horizontal",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"scroll-area-horizontal.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "select-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"select-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "select-form",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"select-form.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"sveltekit-superforms@^2.19.1",
+					"svelte-sonner@^0.3.25"
+				]
+			},
+			{
+				"name": "separator-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"separator-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sheet-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"sheet-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sheet-side",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"sheet-side.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "skeleton-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"skeleton-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "slider-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"slider-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sonner-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"sonner-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"svelte-sonner@^0.3.25"
+				]
+			},
+			{
+				"name": "switch-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"switch-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "switch-form",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"switch-form.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"sveltekit-superforms@^2.19.1",
+					"svelte-sonner@^0.3.25"
+				]
+			},
+			{
+				"name": "table-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"table-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "tabs-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"tabs-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "textarea-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"textarea-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "textarea-disabled",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"textarea-disabled.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "textarea-form",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"textarea-form.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"sveltekit-superforms@^2.19.1",
+					"svelte-sonner@^0.3.25"
+				]
+			},
+			{
+				"name": "textarea-with-button",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"textarea-with-button.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "textarea-with-label",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"textarea-with-label.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "textarea-with-text",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"textarea-with-text.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "toggle-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "toggle-disabled",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-disabled.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "toggle-group-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-group-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "toggle-group-disabled",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-group-disabled.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "toggle-group-lg",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-group-lg.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "toggle-group-outline",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-group-outline.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "toggle-group-single",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-group-single.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "toggle-group-sm",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-group-sm.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "toggle-lg",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-lg.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "toggle-outline",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-outline.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "toggle-sm",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-sm.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "toggle-with-text",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"toggle-with-text.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "tooltip-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"tooltip-demo.svelte"
+				],
+				"localDependencies": [
+					"ui/button"
+				],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-blockquote",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-blockquote.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-demo",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-demo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-h1",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-h1.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-h2",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-h2.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-h3",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-h3.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-h4",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-h4.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-inline-code",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-inline-code.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-large",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-large.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-lead",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-lead.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-list",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-list.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-muted",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-muted.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-p",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-p.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-small",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-small.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "typography-table",
+				"directory": "sites/docs/src/lib/registry/default/example",
+				"category": "example",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"typography-table.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			}
+		]
+	},
+	{
+		"name": "hook",
+		"blocks": [
+			{
+				"name": "is-mobile.svelte",
+				"directory": "sites/docs/src/lib/registry/default/hook",
+				"category": "hook",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"is-mobile.svelte.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"svelte@^5.0.0"
+				]
+			}
+		]
+	},
+	{
+		"name": "ui",
+		"blocks": [
+			{
+				"name": "accordion",
+				"directory": "sites/docs/src/lib/registry/default/ui/accordion",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"accordion-content.svelte",
+					"accordion-item.svelte",
+					"accordion-trigger.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "alert",
+				"directory": "sites/docs/src/lib/registry/default/ui/alert",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"alert-description.svelte",
+					"alert-title.svelte",
+					"alert.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "alert-dialog",
+				"directory": "sites/docs/src/lib/registry/default/ui/alert-dialog",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"alert-dialog-action.svelte",
+					"alert-dialog-cancel.svelte",
+					"alert-dialog-content.svelte",
+					"alert-dialog-description.svelte",
+					"alert-dialog-footer.svelte",
+					"alert-dialog-header.svelte",
+					"alert-dialog-overlay.svelte",
+					"alert-dialog-title.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "aspect-ratio",
+				"directory": "sites/docs/src/lib/registry/default/ui/aspect-ratio",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "avatar",
+				"directory": "sites/docs/src/lib/registry/default/ui/avatar",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"avatar-fallback.svelte",
+					"avatar-image.svelte",
+					"avatar.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "badge",
+				"directory": "sites/docs/src/lib/registry/default/ui/badge",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"badge.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "breadcrumb",
+				"directory": "sites/docs/src/lib/registry/default/ui/breadcrumb",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"breadcrumb-ellipsis.svelte",
+					"breadcrumb-item.svelte",
+					"breadcrumb-link.svelte",
+					"breadcrumb-list.svelte",
+					"breadcrumb-page.svelte",
+					"breadcrumb-separator.svelte",
+					"breadcrumb.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "button",
+				"directory": "sites/docs/src/lib/registry/default/ui/button",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"button.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "calendar",
+				"directory": "sites/docs/src/lib/registry/default/ui/calendar",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"calendar-cell.svelte",
+					"calendar-day.svelte",
+					"calendar-grid-body.svelte",
+					"calendar-grid-head.svelte",
+					"calendar-grid-row.svelte",
+					"calendar-grid.svelte",
+					"calendar-head-cell.svelte",
+					"calendar-header.svelte",
+					"calendar-heading.svelte",
+					"calendar-months.svelte",
+					"calendar-next-button.svelte",
+					"calendar-prev-button.svelte",
+					"calendar.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "card",
+				"directory": "sites/docs/src/lib/registry/default/ui/card",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"card-content.svelte",
+					"card-description.svelte",
+					"card-footer.svelte",
+					"card-header.svelte",
+					"card-title.svelte",
+					"card.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "carousel",
+				"directory": "sites/docs/src/lib/registry/default/ui/carousel",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"carousel-content.svelte",
+					"carousel-item.svelte",
+					"carousel-next.svelte",
+					"carousel-previous.svelte",
+					"carousel.svelte",
+					"context.ts",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"embla-carousel-svelte@8.1.6",
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0",
+					"svelte@^5.0.0"
+				]
+			},
+			{
+				"name": "checkbox",
+				"directory": "sites/docs/src/lib/registry/default/ui/checkbox",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"checkbox.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "collapsible",
+				"directory": "sites/docs/src/lib/registry/default/ui/collapsible",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "command",
+				"directory": "sites/docs/src/lib/registry/default/ui/command",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"command-dialog.svelte",
+					"command-empty.svelte",
+					"command-group.svelte",
+					"command-input.svelte",
+					"command-item.svelte",
+					"command-link-item.svelte",
+					"command-list.svelte",
+					"command-separator.svelte",
+					"command-shortcut.svelte",
+					"command.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "context-menu",
+				"directory": "sites/docs/src/lib/registry/default/ui/context-menu",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"context-menu-checkbox-item.svelte",
+					"context-menu-content.svelte",
+					"context-menu-group-heading.svelte",
+					"context-menu-item.svelte",
+					"context-menu-radio-item.svelte",
+					"context-menu-separator.svelte",
+					"context-menu-shortcut.svelte",
+					"context-menu-sub-content.svelte",
+					"context-menu-sub-trigger.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "data-table",
+				"directory": "sites/docs/src/lib/registry/default/ui/data-table",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"data-table.svelte.ts",
+					"flex-render.svelte",
+					"index.ts",
+					"render-helpers.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"@tanstack/table-core@^8.20.5",
+					"svelte@^5.0.0"
+				]
+			},
+			{
+				"name": "dialog",
+				"directory": "sites/docs/src/lib/registry/default/ui/dialog",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"dialog-content.svelte",
+					"dialog-description.svelte",
+					"dialog-footer.svelte",
+					"dialog-header.svelte",
+					"dialog-overlay.svelte",
+					"dialog-title.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "drawer",
+				"directory": "sites/docs/src/lib/registry/default/ui/drawer",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"drawer-content.svelte",
+					"drawer-description.svelte",
+					"drawer-footer.svelte",
+					"drawer-header.svelte",
+					"drawer-nested.svelte",
+					"drawer-overlay.svelte",
+					"drawer-title.svelte",
+					"drawer.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"vaul-svelte@^1.0.0-next.2",
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "dropdown-menu",
+				"directory": "sites/docs/src/lib/registry/default/ui/dropdown-menu",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"dropdown-menu-checkbox-item.svelte",
+					"dropdown-menu-content.svelte",
+					"dropdown-menu-group-heading.svelte",
+					"dropdown-menu-item.svelte",
+					"dropdown-menu-label.svelte",
+					"dropdown-menu-radio-item.svelte",
+					"dropdown-menu-separator.svelte",
+					"dropdown-menu-shortcut.svelte",
+					"dropdown-menu-sub-content.svelte",
+					"dropdown-menu-sub-trigger.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "form",
+				"directory": "sites/docs/src/lib/registry/default/ui/form",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"form-button.svelte",
+					"form-description.svelte",
+					"form-element-field.svelte",
+					"form-field-errors.svelte",
+					"form-field.svelte",
+					"form-fieldset.svelte",
+					"form-label.svelte",
+					"form-legend.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"formsnap@2.0.0-next.1",
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "hover-card",
+				"directory": "sites/docs/src/lib/registry/default/ui/hover-card",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"hover-card-content.svelte",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "input",
+				"directory": "sites/docs/src/lib/registry/default/ui/input",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"input.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "input-otp",
+				"directory": "sites/docs/src/lib/registry/default/ui/input-otp",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"input-otp-group.svelte",
+					"input-otp-separator.svelte",
+					"input-otp-slot.svelte",
+					"input-otp.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "label",
+				"directory": "sites/docs/src/lib/registry/default/ui/label",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"label.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "menubar",
+				"directory": "sites/docs/src/lib/registry/default/ui/menubar",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"menubar-checkbox-item.svelte",
+					"menubar-content.svelte",
+					"menubar-group-heading.svelte",
+					"menubar-item.svelte",
+					"menubar-radio-item.svelte",
+					"menubar-separator.svelte",
+					"menubar-shortcut.svelte",
+					"menubar-sub-content.svelte",
+					"menubar-sub-trigger.svelte",
+					"menubar-trigger.svelte",
+					"menubar.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "pagination",
+				"directory": "sites/docs/src/lib/registry/default/ui/pagination",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"pagination-content.svelte",
+					"pagination-ellipsis.svelte",
+					"pagination-item.svelte",
+					"pagination-link.svelte",
+					"pagination-next-button.svelte",
+					"pagination-prev-button.svelte",
+					"pagination.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "popover",
+				"directory": "sites/docs/src/lib/registry/default/ui/popover",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"popover-content.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "progress",
+				"directory": "sites/docs/src/lib/registry/default/ui/progress",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"progress.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "radio-group",
+				"directory": "sites/docs/src/lib/registry/default/ui/radio-group",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"radio-group-item.svelte",
+					"radio-group.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "range-calendar",
+				"directory": "sites/docs/src/lib/registry/default/ui/range-calendar",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"range-calendar-cell.svelte",
+					"range-calendar-day.svelte",
+					"range-calendar-grid-row.svelte",
+					"range-calendar-grid.svelte",
+					"range-calendar-head-cell.svelte",
+					"range-calendar-header.svelte",
+					"range-calendar-heading.svelte",
+					"range-calendar-months.svelte",
+					"range-calendar-next-button.svelte",
+					"range-calendar-prev-button.svelte",
+					"range-calendar.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "resizable",
+				"directory": "sites/docs/src/lib/registry/default/ui/resizable",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"resizable-handle.svelte",
+					"resizable-pane-group.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"paneforge@1.0.0-next.1",
+					"lucide-svelte@^0.447.0",
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "scroll-area",
+				"directory": "sites/docs/src/lib/registry/default/ui/scroll-area",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"scroll-area-scrollbar.svelte",
+					"scroll-area.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "select",
+				"directory": "sites/docs/src/lib/registry/default/ui/select",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"select-content.svelte",
+					"select-group-heading.svelte",
+					"select-item.svelte",
+					"select-scroll-down-button.svelte",
+					"select-scroll-up-button.svelte",
+					"select-separator.svelte",
+					"select-trigger.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "separator",
+				"directory": "sites/docs/src/lib/registry/default/ui/separator",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"separator.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "sheet",
+				"directory": "sites/docs/src/lib/registry/default/ui/sheet",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"sheet-content.svelte",
+					"sheet-description.svelte",
+					"sheet-footer.svelte",
+					"sheet-header.svelte",
+					"sheet-overlay.svelte",
+					"sheet-title.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "sidebar",
+				"directory": "sites/docs/src/lib/registry/default/ui/sidebar",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"constants.ts",
+					"context.svelte.ts",
+					"index.ts",
+					"sidebar-content.svelte",
+					"sidebar-footer.svelte",
+					"sidebar-group-action.svelte",
+					"sidebar-group-content.svelte",
+					"sidebar-group-label.svelte",
+					"sidebar-group.svelte",
+					"sidebar-header.svelte",
+					"sidebar-input.svelte",
+					"sidebar-inset.svelte",
+					"sidebar-menu-action.svelte",
+					"sidebar-menu-badge.svelte",
+					"sidebar-menu-button.svelte",
+					"sidebar-menu-item.svelte",
+					"sidebar-menu-skeleton.svelte",
+					"sidebar-menu-sub-button.svelte",
+					"sidebar-menu-sub-item.svelte",
+					"sidebar-menu-sub.svelte",
+					"sidebar-menu.svelte",
+					"sidebar-provider.svelte",
+					"sidebar-rail.svelte",
+					"sidebar-separator.svelte",
+					"sidebar-trigger.svelte",
+					"sidebar.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"svelte@^5.0.0",
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				]
+			},
+			{
+				"name": "skeleton",
+				"directory": "sites/docs/src/lib/registry/default/ui/skeleton",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"skeleton.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "slider",
+				"directory": "sites/docs/src/lib/registry/default/ui/slider",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"slider.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "sonner",
+				"directory": "sites/docs/src/lib/registry/default/ui/sonner",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"sonner.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"svelte-sonner@^0.3.25",
+					"mode-watcher@^0.3.1"
+				]
+			},
+			{
+				"name": "switch",
+				"directory": "sites/docs/src/lib/registry/default/ui/switch",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"switch.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "table",
+				"directory": "sites/docs/src/lib/registry/default/ui/table",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"table-body.svelte",
+					"table-caption.svelte",
+					"table-cell.svelte",
+					"table-footer.svelte",
+					"table-head.svelte",
+					"table-header.svelte",
+					"table-row.svelte",
+					"table.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "tabs",
+				"directory": "sites/docs/src/lib/registry/default/ui/tabs",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"tabs-content.svelte",
+					"tabs-list.svelte",
+					"tabs-trigger.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "textarea",
+				"directory": "sites/docs/src/lib/registry/default/ui/textarea",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"textarea.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "toggle",
+				"directory": "sites/docs/src/lib/registry/default/ui/toggle",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"toggle.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "toggle-group",
+				"directory": "sites/docs/src/lib/registry/default/ui/toggle-group",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"toggle-group-item.svelte",
+					"toggle-group.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			},
+			{
+				"name": "tooltip",
+				"directory": "sites/docs/src/lib/registry/default/ui/tooltip",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"tooltip-content.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				]
+			}
+		]
+	}
+]

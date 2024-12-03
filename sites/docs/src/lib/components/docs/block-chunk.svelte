@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { HTMLAttributes } from "svelte/elements";
 	import BlockCopyCodeButton from "./block-copy-code-button.svelte";
-	import { cn, getLiftMode } from "$lib/utils.js";
+	import { cn, getLiftMode } from "$lib/utils/utils.js";
 	import type { RawBlockChunk } from "$lib/blocks.js";
 
 	type Props = HTMLAttributes<HTMLDivElement> & {

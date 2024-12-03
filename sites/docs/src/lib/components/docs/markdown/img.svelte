@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { type PrimitiveImgAttributes, cn } from "$lib/utils.js";
+	import { type PrimitiveImgAttributes, cn } from "$lib/utils/utils.js";
 
 	let { class: className, src, alt, ...restProps }: PrimitiveImgAttributes = $props();
 </script>

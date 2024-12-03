@@ -37,7 +37,7 @@
 	import * as Form from "$lib/registry/default/ui/form/index.js";
 	import * as Popover from "$lib/registry/default/ui/popover/index.js";
 	import * as Command from "$lib/registry/default/ui/command/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { buttonVariants } from "$lib/registry/default/ui/button/index.js";
 	let data: SuperValidated<Infer<FormSchema>> = $page.data.combobox;
 	export { data as form };

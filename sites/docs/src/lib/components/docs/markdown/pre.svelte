@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { tick } from "svelte";
 	import CopyButton from "$lib/components/docs/copy-button.svelte";
-	import { type PrimitiveElementAttributes, cn, createCopyCodeButton } from "$lib/utils.js";
+	import { type PrimitiveElementAttributes, cn, createCopyCodeButton } from "$lib/utils/utils.js";
 	import { getPackageManager } from "$lib/stores/package-manager.js";
 
 	const selectedPackageManager = getPackageManager();

@@ -2,7 +2,7 @@
 	import * as DropdownMenu from "$lib/registry/new-york/ui/dropdown-menu/index.js";
 	import * as Avatar from "$lib/registry/new-york/ui/avatar/index.js";
 	import { buttonVariants } from "$lib/registry/new-york/ui/button/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 </script>
 
 <DropdownMenu.Root>

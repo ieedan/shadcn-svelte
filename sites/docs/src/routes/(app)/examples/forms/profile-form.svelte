@@ -24,7 +24,7 @@
 	import { Input } from "$lib/registry/new-york/ui/input/index.js";
 	import { Button } from "$lib/registry/new-york/ui/button/index.js";
 	import { Textarea } from "$lib/registry/new-york/ui/textarea/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { browser } from "$app/environment";
 
 	let { data }: { data: SuperValidated<Infer<ProfileFormSchema>> } = $props();

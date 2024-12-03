@@ -6,7 +6,7 @@
 	import CircleX from "lucide-svelte/icons/circle-x";
 	import { type ComponentType, tick } from "svelte";
 	import { useId } from "bits-ui";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import * as Popover from "$lib/registry/default/ui/popover/index.js";
 	import * as Command from "$lib/registry/default/ui/command/index.js";
 	import { buttonVariants } from "$lib/registry/default/ui/button/index.js";

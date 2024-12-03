@@ -2,7 +2,7 @@
 	import ArrowLeft from "lucide-svelte/icons/arrow-left";
 	import type { WithoutChildren } from "bits-ui";
 	import { getEmblaContext } from "./context.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { Button, type Props } from "$lib/registry/default/ui/button/index.js";
 
 	let {

@@ -8,7 +8,7 @@
 	import * as DropdownMenu from "$lib/registry/new-york/ui/dropdown-menu/index.js";
 	import { Separator } from "$lib/registry/new-york/ui/separator/index.js";
 	import { buttonVariants } from "$lib/registry/default/ui/button/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 </script>
 
 <Card.Root>

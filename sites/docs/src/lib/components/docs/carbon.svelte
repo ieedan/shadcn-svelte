@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { isBrowser } from "$lib/utils.js";
+	import { isBrowser } from "$lib/utils/utils.js";
 	import { beforeNavigate } from "$app/navigation";
 	import { dev } from "$app/environment";
 

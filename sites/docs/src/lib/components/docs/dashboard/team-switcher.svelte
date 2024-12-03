@@ -3,7 +3,7 @@
 	import Check from "lucide-svelte/icons/check";
 	import CirclePlus from "lucide-svelte/icons/circle-plus";
 	import { tick } from "svelte";
-	import { type PrimitiveElementAttributes, cn } from "$lib/utils.js";
+	import { type PrimitiveElementAttributes, cn } from "$lib/utils/utils.js";
 	import * as Avatar from "$lib/registry/new-york/ui/avatar/index.js";
 	import { Button, buttonVariants } from "$lib/registry/new-york/ui/button/index.js";
 	import * as Command from "$lib/registry/new-york/ui/command/index.js";

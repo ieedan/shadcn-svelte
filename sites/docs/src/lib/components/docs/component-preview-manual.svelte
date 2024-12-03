@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { type PrimitiveDivAttributes, cn } from "$lib/utils.js";
+	import { type PrimitiveDivAttributes, cn } from "$lib/utils/utils.js";
 	import StyleSwitcher from "$lib/components/docs/style-switcher.svelte";
 	import ThemeWrapper from "$lib/components/docs/theme-wrapper.svelte";
 	import { config } from "$lib/stores/config.js";

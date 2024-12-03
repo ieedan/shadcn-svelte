@@ -3,7 +3,7 @@
 	import { Button } from "$lib/registry/new-york/ui/button/index.js";
 	import { Input } from "$lib/registry/new-york/ui/input/index.js";
 	import { Label } from "$lib/registry/new-york/ui/label/index.js";
-	import { type PrimitiveDivAttributes, cn } from "$lib/utils.js";
+	import { type PrimitiveDivAttributes, cn } from "$lib/utils/utils.js";
 
 	let { class: className, ...restProps }: PrimitiveDivAttributes = $props();
 

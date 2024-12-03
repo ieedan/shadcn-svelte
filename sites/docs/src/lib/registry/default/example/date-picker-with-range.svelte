@@ -7,7 +7,7 @@
 		type DateValue,
 		getLocalTimeZone,
 	} from "@internationalized/date";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { buttonVariants } from "$lib/registry/default/ui/button/index.js";
 	import { RangeCalendar } from "$lib/registry/default/ui/range-calendar/index.js";
 	import * as Popover from "$lib/registry/default/ui/popover/index.js";

@@ -2,7 +2,7 @@
 	import * as Icon from "../icons/index.js";
 	import { page } from "$app/stores";
 	import { siteConfig } from "$lib/config/site.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 </script>
 
 <div class="mr-4 hidden md:flex">

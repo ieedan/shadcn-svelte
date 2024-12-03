@@ -2,7 +2,7 @@
 	import { fade } from "svelte/transition";
 	import { cubicOut } from "svelte/easing";
 	import { type Snippet, tick } from "svelte";
-	import { getLiftMode, isBrowser } from "$lib/utils.js";
+	import { getLiftMode, isBrowser } from "$lib/utils/utils.js";
 	import type { RawBlock } from "$lib/blocks.js";
 
 	let { block, children }: { block: RawBlock; children: Snippet } = $props();

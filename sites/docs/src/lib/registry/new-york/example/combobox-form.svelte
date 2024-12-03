@@ -37,7 +37,7 @@
 	import * as Form from "$lib/registry/new-york/ui/form/index.js";
 	import * as Popover from "$lib/registry/new-york/ui/popover/index.js";
 	import * as Command from "$lib/registry/new-york/ui/command/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { buttonVariants } from "$lib/registry/new-york/ui/button/index.js";
 
 	let { form: data = $page.data.combobox }: { form: SuperValidated<Infer<FormSchema>> } =

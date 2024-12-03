@@ -4,7 +4,7 @@
 	import * as Tabs from "$lib/registry/new-york/ui/tabs/index.js";
 	import { Index } from "$lib/../__registry__/index.js";
 	import { config } from "$lib/stores/index.js";
-	import { type PrimitiveDivAttributes, cn } from "$lib/utils.js";
+	import { type PrimitiveDivAttributes, cn } from "$lib/utils/utils.js";
 	import StyleSwitcher from "$lib/components/docs/style-switcher.svelte";
 	import ThemeWrapper from "$lib/components/docs/theme-wrapper.svelte";
 

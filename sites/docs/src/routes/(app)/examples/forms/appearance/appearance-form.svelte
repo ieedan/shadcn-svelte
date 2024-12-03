@@ -22,7 +22,7 @@
 	import * as Form from "$lib/registry/new-york/ui/form/index.js";
 	import * as RadioGroup from "$lib/registry/new-york/ui/radio-group/index.js";
 	import { Label } from "$lib/registry/new-york/ui/label/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { buttonVariants } from "$lib/registry/new-york/ui/button/index.js";
 
 	let { data }: { data: SuperValidated<Infer<AppearanceFormSchema>> } = $props();

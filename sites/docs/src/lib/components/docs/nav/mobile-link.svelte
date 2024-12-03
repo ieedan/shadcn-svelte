@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from "$app/stores";
-	import { type PrimitiveAnchorAttributes, cn } from "$lib/utils.js";
+	import { type PrimitiveAnchorAttributes, cn } from "$lib/utils/utils.js";
 
 	let {
 		open = $bindable(false),

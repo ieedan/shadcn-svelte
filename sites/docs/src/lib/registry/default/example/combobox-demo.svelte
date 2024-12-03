@@ -5,7 +5,7 @@
 	import * as Command from "$lib/registry/default/ui/command/index.js";
 	import * as Popover from "$lib/registry/default/ui/popover/index.js";
 	import { Button } from "$lib/registry/default/ui/button/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 
 	const frameworks = [
 		{

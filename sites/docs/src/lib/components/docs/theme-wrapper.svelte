@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { config } from "$lib/stores/index.js";
-	import { type PrimitiveDivAttributes, cn } from "$lib/utils.js";
+	import { type PrimitiveDivAttributes, cn } from "$lib/utils/utils.js";
 
 	let {
 		class: className,

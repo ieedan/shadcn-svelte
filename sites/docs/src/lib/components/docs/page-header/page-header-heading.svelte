@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { type PrimitiveHeadingAttributes, cn } from "$lib/utils.js";
+	import { type PrimitiveHeadingAttributes, cn } from "$lib/utils/utils.js";
 
 	let { class: className, children, ...restProps }: PrimitiveHeadingAttributes = $props();
 </script>

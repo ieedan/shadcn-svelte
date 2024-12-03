@@ -23,7 +23,7 @@
 		"ci:publish": "changeset publish",
 		"ci:build": "pnpm build:cli",
 		"ci:release": "pnpm ci:build && pnpm ci:publish",
-		"build:jsrepo": "jsrepo build --dirs ./sites/docs/src/lib/registry/default"
+		"build:jsrepo": "jsrepo build --dirs ./sites/docs/src/lib/registry/default ./sites/docs/src/lib --include-categories ui hook utils"
 	},
 	"engines": {
 		"pnpm": ">=9",
@@ -47,7 +47,7 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.44.1",
 		"globals": "^15.11.0",
-		"jsrepo": "^1.12.2",
+		"jsrepo": "https://pkg.pr.new/ieedan/jsrepo@c22adc7",
 		"prettier": "^3.3.3",
 		"prettier-plugin-svelte": "^3.2.7",
 		"prettier-plugin-tailwindcss": "^0.6.8",

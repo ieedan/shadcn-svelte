@@ -8,7 +8,7 @@
 	import DocsPager from "$lib/components/docs/docs-pager.svelte";
 	import TableOfContents from "$lib/components/docs/table-of-contents.svelte";
 	import { badgeVariants } from "$lib/registry/new-york/ui/badge/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import Carbon from "$lib/components/docs/carbon.svelte";
 	import { page } from "$app/stores";
 

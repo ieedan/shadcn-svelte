@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Playlist } from "../(data)/playlists.js";
-	import { type PrimitiveDivAttributes, cn } from "$lib/utils.js";
+	import { type PrimitiveDivAttributes, cn } from "$lib/utils/utils.js";
 	import { Button } from "$lib/registry/new-york/ui/button/index.js";
 	import { ScrollArea } from "$lib/registry/new-york/ui/scroll-area/index.js";
 

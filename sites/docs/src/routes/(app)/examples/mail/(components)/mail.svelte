@@ -7,7 +7,7 @@
 	import MailDisplay from "./mail-display.svelte";
 	import MailList from "./mail-list.svelte";
 	import Nav from "./nav.svelte";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { Input } from "$lib/registry/new-york/ui/input/index.js";
 	import * as Resizable from "$lib/registry/new-york/ui/resizable/index.js";
 	import { Separator } from "$lib/registry/new-york/ui/select/index.js";

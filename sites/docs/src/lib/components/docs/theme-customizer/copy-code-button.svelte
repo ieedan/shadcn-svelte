@@ -7,7 +7,7 @@
 	import { Button } from "$lib/registry/new-york/ui/button/index.js";
 	import CustomizerCode from "$lib/components/docs/theme-customizer/customizer-code.svelte";
 	import ThemeWrapper from "$lib/components/docs/theme-wrapper.svelte";
-	import { createCopyCodeButton } from "$lib/utils.js";
+	import { createCopyCodeButton } from "$lib/utils/utils.js";
 
 	const activeTheme = $derived(themes.find((theme) => theme.name === $config.theme));
 

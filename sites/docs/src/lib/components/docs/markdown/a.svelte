@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { type PrimitiveAnchorAttributes, cn } from "$lib/utils.js";
+	import { type PrimitiveAnchorAttributes, cn } from "$lib/utils/utils.js";
 
 	let { class: className, children, href, ...restProps }: PrimitiveAnchorAttributes = $props();
 

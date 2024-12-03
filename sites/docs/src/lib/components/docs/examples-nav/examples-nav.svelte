@@ -4,7 +4,7 @@
 	import ExampleCodeLink from "./example-code-link.svelte";
 	import { page } from "$app/stores";
 	import { examples } from "$lib/config/docs.js";
-	import { type PrimitiveElementAttributes, cn } from "$lib/utils.js";
+	import { type PrimitiveElementAttributes, cn } from "$lib/utils/utils.js";
 	import { ScrollArea } from "$lib/registry/new-york/ui/scroll-area/index.js";
 
 	let { class: className, ...restProps }: PrimitiveElementAttributes = $props();

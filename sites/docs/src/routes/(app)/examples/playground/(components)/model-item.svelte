@@ -3,7 +3,7 @@
 	import Check from "lucide-svelte/icons/check";
 	import type { Model } from "../(data)/models.js";
 	import * as Command from "$lib/registry/new-york/ui/command/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 
 	type Props = {
 		model: Model;

@@ -2,7 +2,7 @@
 	import type { Component } from "svelte";
 	import type { PageData } from "./$types.js";
 	import { Blocks } from "$lib/../__registry__/blocks.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import BlockWrapper from "$lib/components/docs/block-wrapper.svelte";
 	import BlockChunk from "$lib/components/docs/block-chunk.svelte";
 	import type { RawBlockChunk } from "$lib/blocks.js";

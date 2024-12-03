@@ -10,7 +10,7 @@
 	import * as Popover from "$lib/registry/new-york/ui/popover/index.js";
 	import ThemeWrapper from "$lib/components/docs/theme-wrapper.svelte";
 	import { Label } from "$lib/registry/new-york/ui/label/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { themes } from "$lib/registry/index.js";
 </script>
 

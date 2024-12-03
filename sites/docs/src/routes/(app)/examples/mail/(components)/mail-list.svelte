@@ -2,7 +2,7 @@
 	import { mailStore } from "../store.js";
 	import type { Mail } from "../data.js";
 	import { formatTimeAgo } from "../utils.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { Badge } from "$lib/registry/new-york/ui/badge/index.js";
 	import { ScrollArea } from "$lib/registry/new-york/ui/scroll-area/index.js";
 

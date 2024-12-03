@@ -5,7 +5,7 @@
 	import { page } from "$app/stores";
 	import DocsPager from "$lib/components/docs/docs-pager.svelte";
 	import TableOfContents from "$lib/components/docs/table-of-contents.svelte";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 
 	let { data }: { data: PageData } = $props();
 

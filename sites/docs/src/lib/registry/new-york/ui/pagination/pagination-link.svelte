@@ -4,7 +4,7 @@
 		type Props as ButtonProps,
 		buttonVariants,
 	} from "$lib/registry/new-york/ui/button/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 
 	type Props = WithoutChild<PaginationPrimitive.PageProps> &
 		ButtonProps & {

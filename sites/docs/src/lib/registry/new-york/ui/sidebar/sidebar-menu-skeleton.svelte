@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Skeleton } from "$lib/registry/new-york/ui/skeleton/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import type { WithElementRef } from "bits-ui";
 	import type { HTMLAttributes } from "svelte/elements";
 

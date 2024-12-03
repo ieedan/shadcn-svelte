@@ -2,7 +2,7 @@
 	import CopyButton from "./copy-button.svelte";
 	import { Input } from "$lib/registry/new-york/ui/input/index.js";
 	import { Label } from "$lib/registry/new-york/ui/label/index.js";
-	import { hexToHsl, hexToRgb } from "$lib/utils.js";
+	import { hexToHsl, hexToRgb } from "$lib/utils/utils.js";
 
 	let hex = $state("#030711");
 	let hsl: [number, number, number] = $state([0, 0, 0]);

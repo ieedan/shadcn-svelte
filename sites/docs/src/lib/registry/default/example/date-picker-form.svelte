@@ -24,7 +24,7 @@
 	import { toast } from "svelte-sonner";
 	import { browser } from "$app/environment";
 	import { page } from "$app/stores";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { Button, buttonVariants } from "$lib/registry/default/ui/button/index.js";
 	import { Calendar } from "$lib/registry/default/ui/calendar/index.js";
 	import * as Popover from "$lib/registry/default/ui/popover/index.js";

@@ -4,7 +4,7 @@
 	import { tick } from "svelte";
 	import { useId } from "bits-ui";
 	import type { Preset } from "../(data)/presets.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { buttonVariants } from "$lib/registry/new-york/ui/button/index.js";
 	import * as Command from "$lib/registry/new-york/ui/command/index.js";
 	import * as Popover from "$lib/registry/new-york/ui/popover/index.js";

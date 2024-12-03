@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { cubicInOut } from "svelte/easing";
 	import { crossfade } from "svelte/transition";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { page } from "$app/stores";
 	import { Button } from "$lib/registry/new-york/ui/button/index.js";
 

@@ -3,7 +3,7 @@
 	import { DateFormatter, getLocalTimeZone } from "@internationalized/date";
 	import * as Calendar from "$lib/registry/new-york/ui/calendar/index.js";
 	import * as Select from "$lib/registry/new-york/ui/select/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 
 	let {
 		value = $bindable(),

@@ -54,7 +54,7 @@
 	import { Calendar } from "$lib/registry/new-york/ui/calendar/index.js";
 	import { Input } from "$lib/registry/new-york/ui/input/index.js";
 	import { buttonVariants } from "$lib/registry/new-york/ui/button/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { browser } from "$app/environment";
 
 	let { data }: { data: SuperValidated<Infer<AccountFormSchema>> } = $props();

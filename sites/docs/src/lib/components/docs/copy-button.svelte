@@ -3,7 +3,7 @@
 	import Copy from "lucide-svelte/icons/copy";
 	import ChevronsUpDown from "lucide-svelte/icons/chevrons-up-down";
 	import { tick } from "svelte";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { getPackageManager } from "$lib/stores/package-manager.js";
 	import { Button, type ButtonProps } from "$lib/registry/new-york/ui/button/index.js";
 	import * as DropdownMenu from "$lib/registry/new-york/ui/dropdown-menu/index.js";

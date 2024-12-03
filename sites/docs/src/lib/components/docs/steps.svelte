@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PrimitiveDivAttributes } from "$lib/utils.js";
+	import type { PrimitiveDivAttributes } from "$lib/utils/utils.js";
 
 	let { children, ...restProps }: PrimitiveDivAttributes = $props();
 </script>

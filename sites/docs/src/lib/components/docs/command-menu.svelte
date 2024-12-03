@@ -8,7 +8,7 @@
 	import { resetMode, setMode } from "mode-watcher";
 	import * as Command from "$lib/registry/new-york/ui/command/index.js";
 	import { Button } from "$lib/registry/new-york/ui/button/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 	import { docsConfig } from "$lib/config/docs.js";
 
 	let restProps: ComponentProps<typeof Button> = $props();

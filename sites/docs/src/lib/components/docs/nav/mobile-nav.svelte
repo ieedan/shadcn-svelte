@@ -6,7 +6,7 @@
 	import { ScrollArea } from "$lib/registry/new-york/ui/scroll-area/index.js";
 	import { docsConfig } from "$lib/config/docs.js";
 	import { siteConfig } from "$lib/config/site.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 
 	let open = $state(false);
 </script>

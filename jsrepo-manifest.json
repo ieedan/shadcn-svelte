@@ -1,7 +1,343 @@
 [
 	{
+		"name": "hook",
+		"blocks": [
+			{
+				"name": "is-mobile.svelte",
+				"directory": "sites/docs/src/lib/registry/default/hook",
+				"category": "hook",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"is-mobile.svelte.ts"
+				],
+				"localDependencies": [],
+				"_imports_": {},
+				"dependencies": [],
+				"devDependencies": [
+					"svelte@^5.0.0"
+				]
+			}
+		]
+	},
+	{
 		"name": "ui",
 		"blocks": [
+			{
+				"name": "accordion",
+				"directory": "sites/docs/src/lib/registry/default/ui/accordion",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"accordion-content.svelte",
+					"accordion-item.svelte",
+					"accordion-trigger.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "alert",
+				"directory": "sites/docs/src/lib/registry/default/ui/alert",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"alert-description.svelte",
+					"alert-title.svelte",
+					"alert.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "alert-dialog",
+				"directory": "sites/docs/src/lib/registry/default/ui/alert-dialog",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"alert-dialog-action.svelte",
+					"alert-dialog-cancel.svelte",
+					"alert-dialog-content.svelte",
+					"alert-dialog-description.svelte",
+					"alert-dialog-footer.svelte",
+					"alert-dialog-header.svelte",
+					"alert-dialog-overlay.svelte",
+					"alert-dialog-title.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"ui/button",
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/registry/default/ui/button/index.js": "{{ui/button}}/index.js",
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "aspect-ratio",
+				"directory": "sites/docs/src/lib/registry/default/ui/aspect-ratio",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {}
+			},
+			{
+				"name": "avatar",
+				"directory": "sites/docs/src/lib/registry/default/ui/avatar",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"avatar-fallback.svelte",
+					"avatar-image.svelte",
+					"avatar.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "badge",
+				"directory": "sites/docs/src/lib/registry/default/ui/badge",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"badge.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "breadcrumb",
+				"directory": "sites/docs/src/lib/registry/default/ui/breadcrumb",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"breadcrumb-ellipsis.svelte",
+					"breadcrumb-item.svelte",
+					"breadcrumb-link.svelte",
+					"breadcrumb-list.svelte",
+					"breadcrumb-page.svelte",
+					"breadcrumb-separator.svelte",
+					"breadcrumb.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"lucide-svelte@^0.447.0",
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "button",
+				"directory": "sites/docs/src/lib/registry/default/ui/button",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"button.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "calendar",
+				"directory": "sites/docs/src/lib/registry/default/ui/calendar",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"calendar-cell.svelte",
+					"calendar-day.svelte",
+					"calendar-grid-body.svelte",
+					"calendar-grid-head.svelte",
+					"calendar-grid-row.svelte",
+					"calendar-grid.svelte",
+					"calendar-head-cell.svelte",
+					"calendar-header.svelte",
+					"calendar-heading.svelte",
+					"calendar-months.svelte",
+					"calendar-next-button.svelte",
+					"calendar-prev-button.svelte",
+					"calendar.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils",
+					"ui/button"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js",
+					"$lib/registry/default/ui/button/index.js": "{{ui/button}}/index.js"
+				}
+			},
+			{
+				"name": "card",
+				"directory": "sites/docs/src/lib/registry/default/ui/card",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"card-content.svelte",
+					"card-description.svelte",
+					"card-footer.svelte",
+					"card-header.svelte",
+					"card-title.svelte",
+					"card.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "carousel",
+				"directory": "sites/docs/src/lib/registry/default/ui/carousel",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"carousel-content.svelte",
+					"carousel-item.svelte",
+					"carousel-next.svelte",
+					"carousel-previous.svelte",
+					"carousel.svelte",
+					"context.ts",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils",
+					"ui/button"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"embla-carousel-svelte@8.1.6",
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0",
+					"svelte@^5.0.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js",
+					"$lib/registry/default/ui/button/index.js": "{{ui/button}}/index.js"
+				}
+			},
+			{
+				"name": "checkbox",
+				"directory": "sites/docs/src/lib/registry/default/ui/checkbox",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"checkbox.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "collapsible",
+				"directory": "sites/docs/src/lib/registry/default/ui/collapsible",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {}
+			},
 			{
 				"name": "command",
 				"directory": "sites/docs/src/lib/registry/default/ui/command",
@@ -22,19 +358,861 @@
 					"index.ts"
 				],
 				"localDependencies": [
-					"ui/dialog"
+					"ui/dialog",
+					"utils/utils"
 				],
 				"dependencies": [],
 				"devDependencies": [
 					"bits-ui@1.0.0-next.63",
 					"lucide-svelte@^0.447.0"
-				]
+				],
+				"_imports_": {
+					"$lib/registry/default/ui/dialog/index.js": "{{ui/dialog}}/index.js",
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "context-menu",
+				"directory": "sites/docs/src/lib/registry/default/ui/context-menu",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"context-menu-checkbox-item.svelte",
+					"context-menu-content.svelte",
+					"context-menu-group-heading.svelte",
+					"context-menu-item.svelte",
+					"context-menu-radio-item.svelte",
+					"context-menu-separator.svelte",
+					"context-menu-shortcut.svelte",
+					"context-menu-sub-content.svelte",
+					"context-menu-sub-trigger.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "data-table",
+				"directory": "sites/docs/src/lib/registry/default/ui/data-table",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"data-table.svelte.ts",
+					"flex-render.svelte",
+					"index.ts",
+					"render-helpers.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"@tanstack/table-core@^8.20.5",
+					"svelte@^5.0.0"
+				],
+				"_imports_": {}
+			},
+			{
+				"name": "dialog",
+				"directory": "sites/docs/src/lib/registry/default/ui/dialog",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"dialog-content.svelte",
+					"dialog-description.svelte",
+					"dialog-footer.svelte",
+					"dialog-header.svelte",
+					"dialog-overlay.svelte",
+					"dialog-title.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "drawer",
+				"directory": "sites/docs/src/lib/registry/default/ui/drawer",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"drawer-content.svelte",
+					"drawer-description.svelte",
+					"drawer-footer.svelte",
+					"drawer-header.svelte",
+					"drawer-nested.svelte",
+					"drawer-overlay.svelte",
+					"drawer-title.svelte",
+					"drawer.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"vaul-svelte@^1.0.0-next.2",
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "dropdown-menu",
+				"directory": "sites/docs/src/lib/registry/default/ui/dropdown-menu",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"dropdown-menu-checkbox-item.svelte",
+					"dropdown-menu-content.svelte",
+					"dropdown-menu-group-heading.svelte",
+					"dropdown-menu-item.svelte",
+					"dropdown-menu-label.svelte",
+					"dropdown-menu-radio-item.svelte",
+					"dropdown-menu-separator.svelte",
+					"dropdown-menu-shortcut.svelte",
+					"dropdown-menu-sub-content.svelte",
+					"dropdown-menu-sub-trigger.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "form",
+				"directory": "sites/docs/src/lib/registry/default/ui/form",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"form-button.svelte",
+					"form-description.svelte",
+					"form-element-field.svelte",
+					"form-field-errors.svelte",
+					"form-field.svelte",
+					"form-fieldset.svelte",
+					"form-label.svelte",
+					"form-legend.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"ui/button",
+					"utils/utils",
+					"ui/label"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"formsnap@2.0.0-next.1",
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/registry/default/ui/button/index.js": "{{ui/button}}/index.js",
+					"$lib/utils/utils.js": "{{utils/utils}}.js",
+					"$lib/registry/default/ui/label/index.js": "{{ui/label}}/index.js"
+				}
+			},
+			{
+				"name": "hover-card",
+				"directory": "sites/docs/src/lib/registry/default/ui/hover-card",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"hover-card-content.svelte",
+					"index.ts"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "input",
+				"directory": "sites/docs/src/lib/registry/default/ui/input",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"input.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "input-otp",
+				"directory": "sites/docs/src/lib/registry/default/ui/input-otp",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"input-otp-group.svelte",
+					"input-otp-separator.svelte",
+					"input-otp-slot.svelte",
+					"input-otp.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "label",
+				"directory": "sites/docs/src/lib/registry/default/ui/label",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"label.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "menubar",
+				"directory": "sites/docs/src/lib/registry/default/ui/menubar",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"menubar-checkbox-item.svelte",
+					"menubar-content.svelte",
+					"menubar-group-heading.svelte",
+					"menubar-item.svelte",
+					"menubar-radio-item.svelte",
+					"menubar-separator.svelte",
+					"menubar-shortcut.svelte",
+					"menubar-sub-content.svelte",
+					"menubar-sub-trigger.svelte",
+					"menubar-trigger.svelte",
+					"menubar.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "pagination",
+				"directory": "sites/docs/src/lib/registry/default/ui/pagination",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"pagination-content.svelte",
+					"pagination-ellipsis.svelte",
+					"pagination-item.svelte",
+					"pagination-link.svelte",
+					"pagination-next-button.svelte",
+					"pagination-prev-button.svelte",
+					"pagination.svelte"
+				],
+				"localDependencies": [
+					"utils/utils",
+					"ui/button"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js",
+					"$lib/registry/default/ui/button/index.js": "{{ui/button}}/index.js"
+				}
+			},
+			{
+				"name": "popover",
+				"directory": "sites/docs/src/lib/registry/default/ui/popover",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"popover-content.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "progress",
+				"directory": "sites/docs/src/lib/registry/default/ui/progress",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"progress.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "radio-group",
+				"directory": "sites/docs/src/lib/registry/default/ui/radio-group",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"radio-group-item.svelte",
+					"radio-group.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "range-calendar",
+				"directory": "sites/docs/src/lib/registry/default/ui/range-calendar",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"range-calendar-cell.svelte",
+					"range-calendar-day.svelte",
+					"range-calendar-grid-row.svelte",
+					"range-calendar-grid.svelte",
+					"range-calendar-head-cell.svelte",
+					"range-calendar-header.svelte",
+					"range-calendar-heading.svelte",
+					"range-calendar-months.svelte",
+					"range-calendar-next-button.svelte",
+					"range-calendar-prev-button.svelte",
+					"range-calendar.svelte"
+				],
+				"localDependencies": [
+					"utils/utils",
+					"ui/button"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js",
+					"$lib/registry/default/ui/button/index.js": "{{ui/button}}/index.js"
+				}
+			},
+			{
+				"name": "resizable",
+				"directory": "sites/docs/src/lib/registry/default/ui/resizable",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"resizable-handle.svelte",
+					"resizable-pane-group.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"paneforge@1.0.0-next.1",
+					"lucide-svelte@^0.447.0",
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "scroll-area",
+				"directory": "sites/docs/src/lib/registry/default/ui/scroll-area",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"scroll-area-scrollbar.svelte",
+					"scroll-area.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "select",
+				"directory": "sites/docs/src/lib/registry/default/ui/select",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"select-content.svelte",
+					"select-group-heading.svelte",
+					"select-item.svelte",
+					"select-scroll-down-button.svelte",
+					"select-scroll-up-button.svelte",
+					"select-separator.svelte",
+					"select-trigger.svelte"
+				],
+				"localDependencies": [
+					"utils/utils",
+					"ui/separator"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js",
+					"$lib/registry/default/ui/separator/index.js": "{{ui/separator}}/index.js"
+				}
+			},
+			{
+				"name": "separator",
+				"directory": "sites/docs/src/lib/registry/default/ui/separator",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"separator.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "sheet",
+				"directory": "sites/docs/src/lib/registry/default/ui/sheet",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"sheet-content.svelte",
+					"sheet-description.svelte",
+					"sheet-footer.svelte",
+					"sheet-header.svelte",
+					"sheet-overlay.svelte",
+					"sheet-title.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "sidebar",
+				"directory": "sites/docs/src/lib/registry/default/ui/sidebar",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"constants.ts",
+					"context.svelte.ts",
+					"index.ts",
+					"sidebar-content.svelte",
+					"sidebar-footer.svelte",
+					"sidebar-group-action.svelte",
+					"sidebar-group-content.svelte",
+					"sidebar-group-label.svelte",
+					"sidebar-group.svelte",
+					"sidebar-header.svelte",
+					"sidebar-input.svelte",
+					"sidebar-inset.svelte",
+					"sidebar-menu-action.svelte",
+					"sidebar-menu-badge.svelte",
+					"sidebar-menu-button.svelte",
+					"sidebar-menu-item.svelte",
+					"sidebar-menu-skeleton.svelte",
+					"sidebar-menu-sub-button.svelte",
+					"sidebar-menu-sub-item.svelte",
+					"sidebar-menu-sub.svelte",
+					"sidebar-menu.svelte",
+					"sidebar-provider.svelte",
+					"sidebar-rail.svelte",
+					"sidebar-separator.svelte",
+					"sidebar-trigger.svelte",
+					"sidebar.svelte"
+				],
+				"localDependencies": [
+					"hook/is-mobile.svelte",
+					"utils/utils",
+					"ui/input",
+					"ui/tooltip",
+					"ui/skeleton",
+					"ui/separator",
+					"ui/button",
+					"ui/sheet"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"svelte@^5.0.0",
+					"bits-ui@1.0.0-next.63",
+					"lucide-svelte@^0.447.0"
+				],
+				"_imports_": {
+					"$lib/registry/default/hook/is-mobile.svelte.js": "{{hook/is-mobile.svelte}}.js",
+					"$lib/utils/utils.js": "{{utils/utils}}.js",
+					"$lib/registry/default/ui/input/index.js": "{{ui/input}}/index.js",
+					"$lib/registry/default/ui/tooltip/index.js": "{{ui/tooltip}}/index.js",
+					"$lib/registry/default/ui/skeleton/index.js": "{{ui/skeleton}}/index.js",
+					"$lib/registry/default/ui/separator/index.js": "{{ui/separator}}/index.js",
+					"$lib/registry/default/ui/button/index.js": "{{ui/button}}/index.js",
+					"$lib/registry/default/ui/sheet/index.js": "{{ui/sheet}}/index.js"
+				}
+			},
+			{
+				"name": "skeleton",
+				"directory": "sites/docs/src/lib/registry/default/ui/skeleton",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"skeleton.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "slider",
+				"directory": "sites/docs/src/lib/registry/default/ui/slider",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"slider.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "sonner",
+				"directory": "sites/docs/src/lib/registry/default/ui/sonner",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"sonner.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [
+					"svelte-sonner@^0.3.25",
+					"mode-watcher@^0.3.1"
+				],
+				"_imports_": {}
+			},
+			{
+				"name": "switch",
+				"directory": "sites/docs/src/lib/registry/default/ui/switch",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"switch.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "table",
+				"directory": "sites/docs/src/lib/registry/default/ui/table",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"table-body.svelte",
+					"table-caption.svelte",
+					"table-cell.svelte",
+					"table-footer.svelte",
+					"table-head.svelte",
+					"table-header.svelte",
+					"table-row.svelte",
+					"table.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "tabs",
+				"directory": "sites/docs/src/lib/registry/default/ui/tabs",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"tabs-content.svelte",
+					"tabs-list.svelte",
+					"tabs-trigger.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "textarea",
+				"directory": "sites/docs/src/lib/registry/default/ui/textarea",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"textarea.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "toggle",
+				"directory": "sites/docs/src/lib/registry/default/ui/toggle",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"toggle.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
+			},
+			{
+				"name": "toggle-group",
+				"directory": "sites/docs/src/lib/registry/default/ui/toggle-group",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"toggle-group-item.svelte",
+					"toggle-group.svelte"
+				],
+				"localDependencies": [
+					"utils/utils",
+					"ui/toggle"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js",
+					"$lib/registry/default/ui/toggle/index.js": "{{ui/toggle}}/index.js"
+				}
+			},
+			{
+				"name": "tooltip",
+				"directory": "sites/docs/src/lib/registry/default/ui/tooltip",
+				"category": "ui",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"index.ts",
+					"tooltip-content.svelte"
+				],
+				"localDependencies": [
+					"utils/utils"
+				],
+				"dependencies": [],
+				"devDependencies": [
+					"bits-ui@1.0.0-next.63"
+				],
+				"_imports_": {
+					"$lib/utils/utils.js": "{{utils/utils}}.js"
+				}
 			}
 		]
 	},
 	{
 		"name": "utils",
 		"blocks": [
+			{
+				"name": "copy-to-clipboard.svelte",
+				"directory": "sites/docs/src/lib/utils",
+				"category": "utils",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"copy-to-clipboard.svelte.ts"
+				],
+				"localDependencies": [],
+				"_imports_": {},
+				"dependencies": [],
+				"devDependencies": []
+			},
 			{
 				"name": "utils",
 				"directory": "sites/docs/src/lib/utils",
@@ -44,17 +1222,12 @@
 				"files": [
 					"utils.ts"
 				],
-				"localDependencies": [
-					"types/docs"
-				],
+				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": [
 					"clsx@^2.1.1",
-					"svelte@^5.0.0",
-					"tailwind-merge@^2.4.0",
-					"@sveltejs/kit@^2.5.28",
-					"svelte-local-storage-store@^0.6.4",
-					"bits-ui@1.0.0-next.63"
+					"tailwind-merge@^2.4.0"
 				]
 			}
 		]

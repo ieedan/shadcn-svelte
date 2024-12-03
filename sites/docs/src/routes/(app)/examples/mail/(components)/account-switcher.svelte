@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Account } from "../data.js";
 	import * as Select from "$lib/registry/new-york/ui/select/index.js";
-	import { cn } from "$lib/utils.js";
+	import { cn } from "$lib/utils/utils.js";
 
 	let {
 		isCollapsed,

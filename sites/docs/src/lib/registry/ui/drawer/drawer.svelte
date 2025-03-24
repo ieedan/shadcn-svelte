@@ -9,4 +9,10 @@
 	}: DrawerPrimitive.RootProps = $props();
 </script>
 
-<DrawerPrimitive.Root {shouldScaleBackground} bind:open bind:activeSnapPoint {...restProps} />
+<DrawerPrimitive.Root
+	{shouldScaleBackground}
+	bind:open
+	data-slot="drawer"
+	bind:activeSnapPoint
+	{...restProps}
+/>

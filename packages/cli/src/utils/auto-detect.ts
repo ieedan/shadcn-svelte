@@ -1,56 +1,48 @@
 import fs from "node:fs";
 import path from "node:path";
+import * as p from "@clack/prompts";
+import * as find from "empathic/find";
 import ignore, { type Ignore } from "ignore";
-import { type TsConfigResult, getTsconfig } from "get-tsconfig";
-import { detect } from "package-manager-detector";
-import { AGENTS, type Agent, COMMANDS } from "package-manager-detector/agents";
-import * as p from "./prompts.js";
+import { AGENTS, detect, getUserAgent, type Agent, type AgentName } from "package-manager-detector";
 import { cancel } from "./prompt-helpers.js";
 
-const STYLESHEETS = [
-	"app.css",
-	"app.pcss",
-	"app.postcss",
-	"main.css",
-	"main.pcss",
-	"main.postcss",
-	"globals.css",
-	"globals.pcss",
-	"globals.postcss",
-];
-const TAILWIND_CONFIGS = [
-	"tailwind.config.js",
-	"tailwind.config.cjs",
-	"tailwind.config.mjs",
-	"tailwind.config.ts",
-];
+const STYLESHEETS = ["app.css", "main.css", "globals.css", "global.css"];
 
 // commonly ignored
 const IGNORE = ["node_modules", ".git", ".svelte-kit"];
 
+/**
+ * Returns the auto-detected filepaths for the global css file and the typescript config.
+ */
 export function detectConfigs(cwd: string, config?: { relative: boolean }) {
-	let tailwindPath, cssPath;
+	let cssPath: string | undefined;
 	const paths = findFiles(cwd);
 	for (const filepath of paths) {
-		const filename = path.parse(filepath).base;
-		if (cssPath === undefined && STYLESHEETS.includes(filename)) {
+		const filename = path.basename(filepath);
+		if (STYLESHEETS.includes(filename)) {
 			cssPath = config?.relative ? path.relative(cwd, filepath) : filepath;
-		}
-		if (tailwindPath === undefined && TAILWIND_CONFIGS.includes(filename)) {
-			tailwindPath = config?.relative ? path.relative(cwd, filepath) : filepath;
+			break;
 		}
 	}
-	return { tailwindPath, cssPath };
+
+	const tsconfigPath = findTSConfig(cwd);
+	const resolvedTsconfigPath =
+		tsconfigPath && config?.relative ? path.relative(cwd, tsconfigPath) : tsconfigPath;
+
+	return {
+		cssPath,
+		tsconfigPath: resolvedTsconfigPath,
+	};
 }
 
 /**
  * Walks down the directory tree, returning file paths that are _not_ ignored from their respective `.gitignore`'s
  */
 function findFiles(dirPath: string) {
-	return find(dirPath, []);
+	return walkDir(dirPath, []);
 }
 
-function find(dirPath: string, ignores: { dirPath: string; ig: Ignore }[]): string[] {
+function walkDir(dirPath: string, ignores: { dirPath: string; ig: Ignore }[]): string[] {
 	const paths: string[] = [];
 	const files = fs.readdirSync(dirPath, { withFileTypes: true });
 	const ignorePath = path.join(dirPath, ".gitignore");
@@ -76,47 +68,44 @@ function find(dirPath: string, ignores: { dirPath: string; ig: Ignore }[]): stri
 		if (ignored) continue;
 
 		if (file.isFile()) paths.push(filepath);
-		if (file.isDirectory()) paths.push(...find(filepath, ignores));
+		if (file.isDirectory()) paths.push(...walkDir(filepath, ignores));
 	}
 
 	return paths;
 }
 
-export type DetectLanguageResult = {
-	config: TsConfigResult;
-	type: "jsconfig.json" | "tsconfig.json";
-};
-
-export function detectLanguage(cwd: string): DetectLanguageResult | undefined {
-	const rootPath = path.resolve(cwd, "package.json");
-	const tsConfig = getTsconfig(rootPath, "tsconfig.json");
-	if (tsConfig !== null) return { type: "tsconfig.json", config: tsConfig };
-
-	const jsConfig = getTsconfig(rootPath, "jsconfig.json");
-	if (jsConfig !== null) return { type: "jsconfig.json", config: jsConfig };
+/**
+ * Returns the absolute path to the nearest typescript config file.
+ */
+function findTSConfig(cwd: string): string | undefined {
+	for (const type of ["tsconfig.json", "jsconfig.json"] as const) {
+		const path = find.up(type, { cwd });
+		if (path) return path;
+	}
 }
 
+const AGENT_NAMES = AGENTS.filter((agent) => !agent.includes("@")) as AgentName[];
 type Options = Array<{ value: Agent | undefined; label: Agent | "None" }>;
-export async function detectPM(cwd: string, prompt: boolean) {
-	let { agent } = await detect({ cwd });
+export async function detectPM(cwd: string, prompt: boolean): Promise<Agent | undefined> {
+	const agent = (await detect({ cwd }))?.agent;
 
-	if (agent === undefined && prompt) {
-		const options: Options = AGENTS.filter((agent) => !agent.includes("@")).map((pm) => ({
-			value: pm,
-			label: pm,
-		}));
+	// prompt for package manager
+	if (!agent && prompt) {
+		const options: Options = AGENT_NAMES.map((pm) => ({ value: pm, label: pm }));
 		options.unshift({ label: "None", value: undefined });
 
-		const res = await p.select({
-			message: "Which package manager do you want to use?",
+		const userAgent = getUserAgent() ?? undefined; // replaces `null` for `undefined`
+		const pm = await p.select({
 			options,
+			initialValue: userAgent,
+			message: "Which package manager do you want to use?",
 		});
-		if (p.isCancel(res)) {
+		if (p.isCancel(pm)) {
 			cancel();
 		}
 
-		agent = res;
+		return pm;
 	}
 
-	return agent ? COMMANDS[agent] : undefined;
+	return agent;
 }

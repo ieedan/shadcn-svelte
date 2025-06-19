@@ -1,10 +1,11 @@
-import color from "chalk";
+import color from "picocolors";
 import { Command, Option } from "commander";
 import { existsSync, promises as fs } from "node:fs";
 import path from "node:path";
 import process from "node:process";
 import { z } from "zod/v4";
 import * as p from "@clack/prompts";
+import type { TsConfigResult } from "get-tsconfig";
 import { detectConfigs } from "../../utils/auto-detect.js";
 import { error, handleError } from "../../utils/errors.js";
 import type { ResolvedConfig } from "../../utils/get-config.js";
@@ -19,7 +20,7 @@ import { addRegistryItems } from "../../utils/add-registry-items.js";
 import { getEnvProxy } from "../../utils/get-env-proxy.js";
 import { highlight, stripTrailingSlash } from "../../utils/utils.js";
 import { installDependencies } from "../../utils/install-deps.js";
-import type { TsConfigResult } from "get-tsconfig";
+import { checkPreconditions } from "../../utils/preconditions.js";
 
 const baseColors = registry.getBaseColors();
 
@@ -70,8 +71,11 @@ export const init = new Command()
 
 			preflightInit(cwd);
 
-			// Read config.
-			const existingConfig = cliConfig.loadConfig(cwd);
+			let existingConfig = cliConfig.loadConfig(cwd);
+			if (existingConfig) {
+				existingConfig = checkPreconditions({ cwd, config: existingConfig });
+			}
+
 			const config = await promptForConfig(cwd, existingConfig, options);
 
 			await runInit(cwd, config, options);
@@ -320,7 +324,7 @@ export async function runInit(cwd: string, config: ResolvedConfig, options: Init
 	} else if (result.skippedDeps.size) {
 		const prettyList = prettifyList([...result.skippedDeps], 7);
 		p.log.warn(
-			`shadcn-svelte has been initialized ${color.bold.red("without")} the following ${highlight("dependencies")}:\n${color.gray(prettyList)}`
+			`shadcn-svelte has been initialized ${color.bold(color.red("without"))} the following ${highlight("dependencies")}:\n${color.gray(prettyList)}`
 		);
 	}
 }

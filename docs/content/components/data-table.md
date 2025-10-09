@@ -255,7 +255,7 @@ export async function load() {
   let { data } = $props();
 </script>
 
-<DataTable {data} {columns} />
+<DataTable data={data.payments} {columns} />
 ```
 
 </Steps>
@@ -282,7 +282,7 @@ export const columns: ColumnDef<Payment>[] = [
       const amountHeaderSnippet = createRawSnippet(() => ({
         render: () => `<div class="text-right">Amount</div>`,
       }));
-      return renderSnippet(amountHeaderSnippet, "");
+      return renderSnippet(amountHeaderSnippet);
     },
     cell: ({ row }) => {
       const formatter = new Intl.NumberFormat("en-US", {
@@ -290,17 +290,20 @@ export const columns: ColumnDef<Payment>[] = [
         currency: "USD",
       });
 
-      const amountCellSnippet = createRawSnippet<[string]>((getAmount) => {
-        const amount = getAmount();
-        return {
-          render: () => `<div class="text-right font-medium">${amount}</div>`,
-        };
-      });
-
-      return renderSnippet(
-        amountCellSnippet,
-        formatter.format(parseFloat(row.getValue("amount")))
+      const amountCellSnippet = createRawSnippet<[{ amount: number }]>(
+        (getAmount) => {
+          const { amount } = getAmount();
+          const formatted = formatter.format(amount);
+          return {
+            render: () =>
+              `<div class="text-right font-medium">${formatted}</div>`,
+          };
+        }
       );
+
+      return renderSnippet(amountCellSnippet, {
+        amount: row.original.amount,
+      });
     },
   },
 ];
@@ -314,7 +317,9 @@ You can use the same approach to format other cells and headers.
 
 ## Row Actions
 
-Let's add row actions to our table. We'll use the `<DropdownMenu />` component for this.
+Let's add row actions to our table. We'll use the `<DropdownMenu />` and the `<Button />` components for this, so you have install them if not done already:
+
+<PMAddComp name="button dropdown-menu" />
 
 <Steps>
 

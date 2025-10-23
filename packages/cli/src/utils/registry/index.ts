@@ -145,7 +145,7 @@ async function fetchRegistry(urls: Array<URL | string>): Promise<unknown[]> {
 		return results;
 	} catch (e) {
 		if (e instanceof CLIError) throw e;
-		throw error(`Failed to fetch registry. ${e instanceof Error ? `Error: ${e.message}` : e}`);
+		throw error(`Failed to fetch registry. ${e instanceof Error ? `Error: ${e.stack}${e.cause ? `\n\t[cause]: ${e.cause}` : ""}` : e}`);
 	}
 }
 

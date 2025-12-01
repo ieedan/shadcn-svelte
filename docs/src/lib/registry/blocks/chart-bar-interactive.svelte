@@ -140,7 +140,7 @@
 					<span class="text-muted-foreground text-xs">
 						{chartConfig[chart].label}
 					</span>
-					<span class="text-lg font-bold leading-none sm:text-3xl">
+					<span class="text-lg leading-none font-bold sm:text-3xl">
 						{total[key as keyof typeof total].toLocaleString()}
 					</span>
 				</button>
@@ -200,7 +200,7 @@
 	<Card.Footer>
 		<div class="flex w-full items-start gap-2 text-sm">
 			<div class="grid gap-2">
-				<div class="flex items-center gap-2 font-medium leading-none">
+				<div class="flex items-center gap-2 leading-none font-medium">
 					Trending up by 5.2% this month <TrendingUpIcon class="size-4" />
 				</div>
 				<div class="text-muted-foreground flex items-center gap-2 leading-none">

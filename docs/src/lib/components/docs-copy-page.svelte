@@ -103,14 +103,14 @@ Help me understand how to use it. Be ready to explain concepts, give examples, o
 
 <Popover.Root>
 	<div
-		class="bg-secondary group/buttons *:[[data-slot=button]]:focus-visible:relative *:[[data-slot=button]]:focus-visible:z-10 relative flex rounded-lg"
+		class="bg-secondary group/buttons relative flex rounded-lg *:[[data-slot=button]]:focus-visible:relative *:[[data-slot=button]]:focus-visible:z-10"
 		data-llm-ignore
 	>
 		<div bind:this={customAnchor}></div>
 		<Button
 			variant="secondary"
 			size="sm"
-			class="h-8 select-none shadow-none md:h-7 md:text-[0.8rem]"
+			class="h-8 shadow-none select-none md:h-7 md:text-[0.8rem]"
 			onclick={async () => await copyPage()}
 		>
 			{#if clipboard.copied}

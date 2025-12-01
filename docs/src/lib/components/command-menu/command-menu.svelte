@@ -117,7 +117,7 @@
 	{@const Content = content}
 	<kbd
 		class={cn(
-			"bg-background text-muted-foreground pointer-events-none flex h-5 select-none items-center justify-center gap-1 rounded border px-1 font-sans text-[0.7rem] font-medium [&_svg:not([class*='size-'])]:size-3",
+			"bg-background text-muted-foreground pointer-events-none flex h-5 items-center justify-center gap-1 rounded border px-1 font-sans text-[0.7rem] font-medium select-none [&_svg:not([class*='size-'])]:size-3",
 			className
 		)}
 		{...restProps}
@@ -159,10 +159,10 @@
 			<Dialog.Description>Search for a command to run...</Dialog.Description>
 		</Dialog.Header>
 		<Command.Root
-			class="**:data-[slot=command-input-wrapper]:bg-input/50 **:data-[slot=command-input-wrapper]:border-input **:data-[slot=command-input]:!h-9 **:data-[slot=command-input]:py-0 **:data-[slot=command-input-wrapper]:mb-0 **:data-[slot=command-input-wrapper]:!h-9 **:data-[slot=command-input-wrapper]:rounded-md **:data-[slot=command-input-wrapper]:border rounded-none bg-transparent"
+			class="**:data-[slot=command-input-wrapper]:bg-input/50 **:data-[slot=command-input-wrapper]:border-input rounded-none bg-transparent **:data-[slot=command-input]:!h-9 **:data-[slot=command-input]:py-0 **:data-[slot=command-input-wrapper]:mb-0 **:data-[slot=command-input-wrapper]:!h-9 **:data-[slot=command-input-wrapper]:rounded-md **:data-[slot=command-input-wrapper]:border"
 		>
 			<Command.Input placeholder="Search documentation..." />
-			<Command.List class="no-scrollbar min-h-80 scroll-pb-1.5 scroll-pt-2">
+			<Command.List class="no-scrollbar min-h-80 scroll-pt-2 scroll-pb-1.5">
 				<Command.Empty class="text-muted-foreground py-12 text-center text-sm">
 					No results found.
 				</Command.Empty>
@@ -218,7 +218,7 @@
 								}}
 							>
 								<div
-									class="border-ghost bg-(--color) aspect-square size-4 rounded-sm after:rounded-sm"
+									class="border-ghost aspect-square size-4 rounded-sm bg-(--color) after:rounded-sm"
 									style="--color: {color.oklch};"
 								></div>
 								{color.class}

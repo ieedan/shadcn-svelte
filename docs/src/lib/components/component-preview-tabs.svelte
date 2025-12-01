@@ -39,7 +39,7 @@
 	{/if}
 {/snippet}
 
-<div class={cn("group relative mb-12 mt-4 flex flex-col gap-2", className)} {...restProps}>
+<div class={cn("group relative mt-4 mb-12 flex flex-col gap-2", className)} {...restProps}>
 	<Tabs.Root class="relative me-auto w-full" bind:value>
 		<div class="flex items-center justify-between" data-llm-ignore>
 			{#if !hideCode}
@@ -72,7 +72,7 @@
 		>
 			<div
 				data-align={align}
-				class="preview flex min-h-[450px] w-full justify-center p-10 data-[align=start]:items-start data-[align=end]:items-end data-[align=center]:items-center"
+				class="preview flex min-h-[450px] w-full justify-center p-10 data-[align=center]:items-center data-[align=end]:items-end data-[align=start]:items-start"
 			>
 				{#if example}
 					{@render example()}
@@ -84,7 +84,7 @@
 		<div
 			data-slot="code"
 			data-active={value === "code"}
-			class="**:[figure]:!m-0 **:[pre]:h-[450px] absolute inset-0 hidden overflow-hidden data-[active=true]:block"
+			class="absolute inset-0 hidden overflow-hidden data-[active=true]:block **:[figure]:!m-0 **:[pre]:h-[450px]"
 		>
 			{@render children?.()}
 		</div>

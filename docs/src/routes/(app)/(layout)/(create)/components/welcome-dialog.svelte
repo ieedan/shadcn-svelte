@@ -20,18 +20,20 @@
 			</div>
 		</div>
 		<Dialog.Header class="gap-1 p-4">
-			<Dialog.Title class="text-left text-base">Build your own shadcn/ui</Dialog.Title>
+			<Dialog.Title class="text-left text-base">Build your own shadcn-svelte</Dialog.Title>
 			<Dialog.Description class="text-foreground text-left leading-relaxed">
 				Customize everything from the ground up. Pick your component library, font, color
 				scheme, and more.
 			</Dialog.Description>
 			<Dialog.Description class="text-foreground mt-2 text-left font-medium leading-relaxed">
-				Available for Next.js, Vite, TanStack Start, and v0.
+				Available for SvelteKit, Vite, and Astro.
 			</Dialog.Description>
 		</Dialog.Header>
 		<Dialog.Footer class="p-4 pt-0">
 			<Dialog.Close>
-				<Button class="w-full rounded-lg shadow-none">Get Started</Button>
+				{#snippet child({ props })}
+					<Button class="w-full rounded-lg shadow-none" {...props}>Get Started</Button>
+				{/snippet}
 			</Dialog.Close>
 		</Dialog.Footer>
 	</Dialog.Content>

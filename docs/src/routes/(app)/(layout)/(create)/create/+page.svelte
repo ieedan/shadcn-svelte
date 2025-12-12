@@ -11,6 +11,7 @@
     import * as Sidebar from "$lib/registry/ui/sidebar/index.js";
     import ItemExplorer from "../components/item-explorer.svelte";
 	import WelcomeDialog from "../components/welcome-dialog.svelte";
+	import Preview from "../components/preview.svelte";
 </script>
 
 <div data-slot="layout" class="section-soft relative z-10 flex min-h-svh flex-col">
@@ -65,8 +66,8 @@
                 class="3xl:fixed:container flex w-full flex-1 flex-col gap-2 p-6 pb-4 pt-1 [--sidebar-width:--spacing(40)] sm:gap-2 sm:pt-2 md:flex-row md:pb-6 2xl:gap-6"
             >
                 <ItemExplorer items={[]} />
-                <!-- <Preview />
-                    <Customizer /> -->
+                <Preview />
+                    <!-- <Customizer /> -->
             </div>
         </Sidebar.Provider>
         <WelcomeDialog />

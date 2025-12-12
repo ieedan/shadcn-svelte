@@ -5,8 +5,7 @@
 	import type { RegistryItem } from "@shadcn-svelte/registry";
 	import { groupItemsByType } from "../lib/utils.js";
 	import { cn } from "$lib/utils.js";
-	import { useSearchParams } from "runed/kit";
-	import { CreateSearchParamsSchema } from "../lib/search-params.js";
+	import { useCreateSearchParams } from "../lib/search-params.js";
 
 	type Props = {
 		items: Pick<RegistryItem, "name" | "title" | "type">[];
@@ -14,7 +13,7 @@
 
 	let { items }: Props = $props();
 
-	const params = useSearchParams(CreateSearchParamsSchema);
+	const params = useCreateSearchParams();
 
 	const groupedItems = $derived(groupItemsByType(items));
 </script>

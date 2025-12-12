@@ -10,6 +10,7 @@
 	import CommandMenu from "./command-menu/command-menu.svelte";
 	import { getColors } from "$lib/colors.js";
 	import { mainNavItems } from "$lib/navigation.js";
+	import PlusIcon from "@tabler/icons-svelte/icons/plus";
 	const colors = getColors();
 </script>
 
@@ -34,6 +35,10 @@
 				<LayoutToggle class="3xl:flex hidden" />
 				<Separator orientation="vertical" />
 				<ModeSwitcher />
+				<Button href="/create" variant="default" size="sm">
+					<PlusIcon/>
+					New Project
+				</Button>
 			</div>
 		</div>
 	</div>

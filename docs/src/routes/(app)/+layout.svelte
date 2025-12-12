@@ -35,12 +35,4 @@
 />
 <Toaster position="top-center" />
 
-<div class="bg-background relative z-10 flex min-h-svh flex-col">
-	<SiteHeader />
-	<main class="flex flex-1 flex-col">
-		<Tooltip.Provider>
-			{@render children()}
-		</Tooltip.Provider>
-	</main>
-	<SiteFooter />
-</div>
+{@render children()}

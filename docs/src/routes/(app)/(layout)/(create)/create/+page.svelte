@@ -10,7 +10,7 @@
 	import SearchIcon from "@lucide/svelte/icons/search";
     import * as Sidebar from "$lib/registry/ui/sidebar/index.js";
     import ItemExplorer from "../components/item-explorer.svelte";
-
+	import WelcomeDialog from "../components/welcome-dialog.svelte";
 </script>
 
 <div data-slot="layout" class="section-soft relative z-10 flex min-h-svh flex-col">
@@ -69,7 +69,7 @@
                     <Customizer /> -->
             </div>
         </Sidebar.Provider>
-        <!-- <WelcomeDialog /> -->
+        <WelcomeDialog />
     </main>
 </div>
 

@@ -8,10 +8,11 @@
 	import ArrowLeftIcon from "@lucide/svelte/icons/arrow-left";
 	import * as InputGroup from "$lib/registry/ui/input-group/index.js";
 	import SearchIcon from "@lucide/svelte/icons/search";
-    import * as Sidebar from "$lib/registry/ui/sidebar/index.js";
-    import ItemExplorer from "../components/item-explorer.svelte";
+	import * as Sidebar from "$lib/registry/ui/sidebar/index.js";
+	import ItemExplorer from "../components/item-explorer.svelte";
 	import WelcomeDialog from "../components/welcome-dialog.svelte";
 	import Preview from "../components/preview.svelte";
+	import Customizer from "../components/customizer.svelte";
 </script>
 
 <div data-slot="layout" class="section-soft relative z-10 flex min-h-svh flex-col">
@@ -58,21 +59,18 @@
 		</div>
 	</header>
 	<main class="flex flex-1 flex-col pb-16 sm:pb-0">
-        <Sidebar.Provider
-            class="flex h-auto min-h-min flex-1 flex-col items-start overflow-hidden px-0"
-        >
-            <div
-                data-slot="designer"
-                class="3xl:fixed:container flex w-full flex-1 flex-col gap-2 p-6 pb-4 pt-1 [--sidebar-width:--spacing(40)] sm:gap-2 sm:pt-2 md:flex-row md:pb-6 2xl:gap-6"
-            >
-                <ItemExplorer items={[]} />
-                <Preview />
-                    <!-- <Customizer /> -->
-            </div>
-        </Sidebar.Provider>
-        <WelcomeDialog />
-    </main>
+		<Sidebar.Provider
+			class="flex h-auto min-h-min flex-1 flex-col items-start overflow-hidden px-0"
+		>
+			<div
+				data-slot="designer"
+				class="3xl:fixed:container flex w-full flex-1 flex-col gap-2 p-6 pb-4 pt-1 [--sidebar-width:--spacing(40)] sm:gap-2 sm:pt-2 md:flex-row md:pb-6 2xl:gap-6"
+			>
+				<ItemExplorer items={[]} />
+				<Preview />
+				<Customizer />
+			</div>
+		</Sidebar.Provider>
+		<WelcomeDialog />
+	</main>
 </div>
-
-
-

@@ -40,12 +40,13 @@
 					<Field.Label for="bug-severity">Severity</Field.Label>
 					<Select.Root type="single" bind:value={severity}>
 						<Select.Trigger id="bug-severity" class="w-full">
-							{severities.find((s) => s.value === severity)?.label ??
-								"Select Severity"}
+							<Select.Value placeholder="Select Severity" />
 						</Select.Trigger>
 						<Select.Content>
 							{#each severities as severity (severity.value)}
-								<Select.Item value={severity.value}>{severity.label}</Select.Item>
+								<Select.Item value={severity.value} label={severity.label}
+									>{severity.label}</Select.Item
+								>
 							{/each}
 						</Select.Content>
 					</Select.Root>
@@ -54,12 +55,13 @@
 					<Field.Label for="bug-component">Component</Field.Label>
 					<Select.Root type="single" bind:value={component}>
 						<Select.Trigger id="bug-component" class="w-full">
-							{components.find((c) => c.value === component)?.label ??
-								"Select Component"}
+							<Select.Value placeholder="Select Component" />
 						</Select.Trigger>
 						<Select.Content>
 							{#each components as component (component.value)}
-								<Select.Item value={component.value}>{component.label}</Select.Item>
+								<Select.Item value={component.value} label={component.label}
+									>{component.label}</Select.Item
+								>
 							{/each}
 						</Select.Content>
 					</Select.Root>

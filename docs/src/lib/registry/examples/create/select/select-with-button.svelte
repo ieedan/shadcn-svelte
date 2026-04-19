@@ -11,12 +11,6 @@
 
 	let selectedValueSm = $state<string | undefined>(undefined);
 	let selectedValueDefault = $state<string | undefined>(undefined);
-	const selectedLabelSm = $derived(
-		items.find((item) => item.value === selectedValueSm)?.label ?? "Small"
-	);
-	const selectedLabelDefault = $derived(
-		items.find((item) => item.value === selectedValueDefault)?.label ?? "Default"
-	);
 </script>
 
 <Example title="With Button">
@@ -24,12 +18,14 @@
 		<div class="flex items-center gap-2">
 			<Select.Root type="single" bind:value={selectedValueSm}>
 				<Select.Trigger size="sm">
-					{selectedLabelSm}
+					<Select.Value placeholder="Small" />
 				</Select.Trigger>
 				<Select.Content>
 					<Select.Group>
 						{#each items as item (item.value)}
-							<Select.Item value={item.value}>{item.label}</Select.Item>
+							<Select.Item value={item.value} label={item.label}
+								>{item.label}</Select.Item
+							>
 						{/each}
 					</Select.Group>
 				</Select.Content>
@@ -39,12 +35,14 @@
 		<div class="flex items-center gap-2">
 			<Select.Root type="single" bind:value={selectedValueDefault}>
 				<Select.Trigger>
-					{selectedLabelDefault}
+					<Select.Value placeholder="Default" />
 				</Select.Trigger>
 				<Select.Content>
 					<Select.Group>
 						{#each items as item (item.value)}
-							<Select.Item value={item.value}>{item.label}</Select.Item>
+							<Select.Item value={item.value} label={item.label}
+								>{item.label}</Select.Item
+							>
 						{/each}
 					</Select.Group>
 				</Select.Content>

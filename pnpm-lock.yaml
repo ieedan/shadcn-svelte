@@ -255,8 +255,8 @@ importers:
         specifier: ^8.16.0
         version: 8.16.0
       bits-ui:
-        specifier: ^2.16.3
-        version: 2.16.3(@internationalized/date@3.12.0)(@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.54.0)(vite@8.0.0(@types/node@25.5.0)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.1)))(svelte@5.54.0)(typescript@5.9.3)(vite@8.0.0(@types/node@25.5.0)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.1)))(svelte@5.54.0)
+        specifier: ^2.18.0
+        version: 2.18.0(@internationalized/date@3.12.0)(@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.54.0)(vite@8.0.0(@types/node@25.5.0)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.1)))(svelte@5.54.0)(typescript@5.9.3)(vite@8.0.0(@types/node@25.5.0)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.1)))(svelte@5.54.0)
       chrono-node:
         specifier: ^2.9.0
         version: 2.9.0
@@ -1429,9 +1429,6 @@ packages:
 
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
-
-  '@floating-ui/utils@0.2.9':
-    resolution: {integrity: sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==}
 
   '@fontsource-variable/dm-sans@5.2.8':
     resolution: {integrity: sha512-AxkvMTvNWgfrmlyjiV05vlHYJa+nRQCf1EfvIrQAPBpFJW0O9VTz7oAFr9S3lvbWdmnFoBk7yFqQL86u64nl2g==}
@@ -3006,8 +3003,8 @@ packages:
       '@internationalized/date': ^3.8.1
       svelte: ^5.33.0
 
-  bits-ui@2.16.3:
-    resolution: {integrity: sha512-5hJ5dEhf5yPzkRFcxzgQHScGodeo0gK0MUUXrdLlRHWaBOBGZiacWLG96j/wwFatKwZvouw7q+sn14i0fx3RIg==}
+  bits-ui@2.18.0:
+    resolution: {integrity: sha512-GLOBZRVy3hxNHIQ2MpD/+5aK9KcBFZRhUJtZ1UDABXdlVR4K6zFpgt4T+Rwuhf2sQzlc6yK1q/DprHPjwT4Pjw==}
     engines: {node: '>=20'}
     peerDependencies:
       '@internationalized/date': ^3.8.1
@@ -6941,7 +6938,7 @@ snapshots:
 
   '@floating-ui/core@1.7.1':
     dependencies:
-      '@floating-ui/utils': 0.2.9
+      '@floating-ui/utils': 0.2.10
 
   '@floating-ui/core@1.7.3':
     dependencies:
@@ -6949,8 +6946,8 @@ snapshots:
 
   '@floating-ui/dom@1.7.1':
     dependencies:
-      '@floating-ui/core': 1.7.1
-      '@floating-ui/utils': 0.2.9
+      '@floating-ui/core': 1.7.3
+      '@floating-ui/utils': 0.2.10
 
   '@floating-ui/dom@1.7.4':
     dependencies:
@@ -6958,8 +6955,6 @@ snapshots:
       '@floating-ui/utils': 0.2.10
 
   '@floating-ui/utils@0.2.10': {}
-
-  '@floating-ui/utils@0.2.9': {}
 
   '@fontsource-variable/dm-sans@5.2.8': {}
 
@@ -8367,7 +8362,7 @@ snapshots:
     transitivePeerDependencies:
       - '@sveltejs/kit'
 
-  bits-ui@2.16.3(@internationalized/date@3.12.0)(@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.54.0)(vite@8.0.0(@types/node@25.5.0)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.1)))(svelte@5.54.0)(typescript@5.9.3)(vite@8.0.0(@types/node@25.5.0)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.1)))(svelte@5.54.0):
+  bits-ui@2.18.0(@internationalized/date@3.12.0)(@sveltejs/kit@2.55.0(@sveltejs/vite-plugin-svelte@7.0.0(svelte@5.54.0)(vite@8.0.0(@types/node@25.5.0)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.1)))(svelte@5.54.0)(typescript@5.9.3)(vite@8.0.0(@types/node@25.5.0)(esbuild@0.27.3)(jiti@2.6.1)(terser@5.44.1)(tsx@4.21.0)(yaml@2.8.1)))(svelte@5.54.0):
     dependencies:
       '@floating-ui/core': 1.7.3
       '@floating-ui/dom': 1.7.4

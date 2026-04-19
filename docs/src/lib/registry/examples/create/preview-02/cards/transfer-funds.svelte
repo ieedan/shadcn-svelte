@@ -53,12 +53,14 @@
 				<Field.Label for="from-account">From Account</Field.Label>
 				<Select.Root type="single" bind:value={fromAccount}>
 					<Select.Trigger id="from-account" class="w-full">
-						{FROM_ACCOUNTS.find((a) => a.value === fromAccount)?.label}
+						<Select.Value placeholder="Select account" />
 					</Select.Trigger>
 					<Select.Content>
 						<Select.Group>
 							{#each FROM_ACCOUNTS as item (item.value)}
-								<Select.Item value={item.value}>{item.label}</Select.Item>
+								<Select.Item value={item.value} label={item.label}
+									>{item.label}</Select.Item
+								>
 							{/each}
 						</Select.Group>
 					</Select.Content>
@@ -68,12 +70,14 @@
 				<Field.Label for="to-account">To Account</Field.Label>
 				<Select.Root type="single" bind:value={toAccount}>
 					<Select.Trigger id="to-account" class="w-full">
-						{TO_ACCOUNTS.find((a) => a.value === toAccount)?.label}
+						<Select.Value placeholder="Select account" />
 					</Select.Trigger>
 					<Select.Content>
 						<Select.Group>
 							{#each TO_ACCOUNTS as item (item.value)}
-								<Select.Item value={item.value}>{item.label}</Select.Item>
+								<Select.Item value={item.value} label={item.label}
+									>{item.label}</Select.Item
+								>
 							{/each}
 						</Select.Group>
 					</Select.Content>

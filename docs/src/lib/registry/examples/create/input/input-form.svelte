@@ -12,9 +12,6 @@
 	];
 
 	let country = $state(countryItems[0].value);
-	const countryLabel = $derived(
-		countryItems.find((item) => item.value === country)?.label ?? "United States"
-	);
 </script>
 
 <Example title="Form">
@@ -38,12 +35,15 @@
 					<Field.Label for="form-country">Country</Field.Label>
 					<Select.Root type="single" bind:value={country}>
 						<Select.Trigger id="form-country">
-							{countryLabel}
+							<Select.Value placeholder="United States" />
 						</Select.Trigger>
 						<Select.Content>
-							<Select.Item value="us">United States</Select.Item>
-							<Select.Item value="uk">United Kingdom</Select.Item>
-							<Select.Item value="ca">Canada</Select.Item>
+							<Select.Item value="us" label="United States">United States</Select.Item
+							>
+							<Select.Item value="uk" label="United Kingdom"
+								>United Kingdom</Select.Item
+							>
+							<Select.Item value="ca" label="Canada">Canada</Select.Item>
 						</Select.Content>
 					</Select.Root>
 				</Field.Field>

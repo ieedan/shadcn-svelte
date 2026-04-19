@@ -30,11 +30,13 @@
 				</InputGroup.Root>
 				<Select.Root type="single" bind:value={role1}>
 					<Select.Trigger class="w-24">
-						{roles.find((role) => role.value === role1)?.label}
+						<Select.Value placeholder="Select role" />
 					</Select.Trigger>
 					<Select.Content>
 						{#each roles as role (role.value)}
-							<Select.Item value={role.value}>{role.label}</Select.Item>
+							<Select.Item value={role.value} label={role.label}
+								>{role.label}</Select.Item
+							>
 						{/each}
 					</Select.Content>
 				</Select.Root>
@@ -45,11 +47,13 @@
 				</InputGroup.Root>
 				<Select.Root type="single" bind:value={role2}>
 					<Select.Trigger class="w-24">
-						{roles.find((role) => role.value === role2)?.label}
+						<Select.Value placeholder="Select role" />
 					</Select.Trigger>
 					<Select.Content>
 						{#each roles as role (role.value)}
-							<Select.Item value={role.value}>{role.label}</Select.Item>
+							<Select.Item value={role.value} label={role.label}
+								>{role.label}</Select.Item
+							>
 						{/each}
 					</Select.Content>
 				</Select.Root>

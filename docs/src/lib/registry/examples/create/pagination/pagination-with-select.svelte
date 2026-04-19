@@ -5,7 +5,6 @@
 	import * as Select from "$lib/registry/ui/select/index.js";
 
 	let selectedValue = $state<string>("25");
-	const selectedLabel = $derived(selectedValue);
 </script>
 
 <Example title="With Select">
@@ -14,14 +13,14 @@
 			<Field.Label for="select-rows-per-page">Rows per page</Field.Label>
 			<Select.Root type="single" bind:value={selectedValue}>
 				<Select.Trigger class="w-20" id="select-rows-per-page">
-					{selectedLabel}
+					<Select.Value placeholder="25" />
 				</Select.Trigger>
 				<Select.Content align="start">
 					<Select.Group>
-						<Select.Item value="10">10</Select.Item>
-						<Select.Item value="25">25</Select.Item>
-						<Select.Item value="50">50</Select.Item>
-						<Select.Item value="100">100</Select.Item>
+						<Select.Item value="10" label="10">10</Select.Item>
+						<Select.Item value="25" label="25">25</Select.Item>
+						<Select.Item value="50" label="50">50</Select.Item>
+						<Select.Item value="100" label="100">100</Select.Item>
 					</Select.Group>
 				</Select.Content>
 			</Select.Root>

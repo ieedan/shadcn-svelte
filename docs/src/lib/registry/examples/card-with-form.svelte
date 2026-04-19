@@ -25,10 +25,6 @@
 	];
 
 	let framework = $state("");
-
-	const selectedFramework = $derived(
-		frameworks.find((f) => f.value === framework)?.label ?? "Select a framework"
-	);
 </script>
 
 <Card.Root class="w-[350px]">
@@ -47,7 +43,7 @@
 					<Label for="framework">Framework</Label>
 					<Select.Root type="single" bind:value={framework}>
 						<Select.Trigger id="framework">
-							{selectedFramework}
+							<Select.Value placeholder="Select a framework" />
 						</Select.Trigger>
 						<Select.Content>
 							{#each frameworks as { value, label } (value)}

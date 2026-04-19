@@ -10,9 +10,6 @@
 	];
 
 	let currency = $state(currencyItems[0].value);
-	const currencyLabel = $derived(
-		currencyItems.find((item) => item.value === currency)?.label ?? "USD"
-	);
 </script>
 
 <Example title="With Select">
@@ -20,12 +17,12 @@
 		<Input.Root type="text" placeholder="Enter amount" class="flex-1" />
 		<Select.Root type="single" bind:value={currency}>
 			<Select.Trigger class="w-32">
-				{currencyLabel}
+				<Select.Value placeholder="USD" />
 			</Select.Trigger>
 			<Select.Content>
-				<Select.Item value="usd">USD</Select.Item>
-				<Select.Item value="eur">EUR</Select.Item>
-				<Select.Item value="gbp">GBP</Select.Item>
+				<Select.Item value="usd" label="USD">USD</Select.Item>
+				<Select.Item value="eur" label="EUR">EUR</Select.Item>
+				<Select.Item value="gbp" label="GBP">GBP</Select.Item>
 			</Select.Content>
 		</Select.Root>
 	</div>

@@ -23,10 +23,6 @@
 		},
 	];
 
-	const selectedDropdown = $derived(
-		dropdownOptions.find((option) => option.value === dropdown)?.label ?? "Dropdown"
-	);
-
 	const id = $props.id();
 </script>
 
@@ -41,11 +37,13 @@
 		<Label for="{id}-dropdown" class="px-1">Dropdown</Label>
 		<Select.Root type="single" bind:value={dropdown}>
 			<Select.Trigger id="{id}-dropdown" size="sm" class="bg-background w-full">
-				{selectedDropdown}
+				<Select.Value placeholder="Dropdown" />
 			</Select.Trigger>
 			<Select.Content align="center">
 				{#each dropdownOptions as option (option.value)}
-					<Select.Item value={option.value}>{option.label}</Select.Item>
+					<Select.Item value={option.value} label={option.label}
+						>{option.label}</Select.Item
+					>
 				{/each}
 			</Select.Content>
 		</Select.Root>

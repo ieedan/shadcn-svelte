@@ -33,10 +33,6 @@
 			value: "es",
 		},
 	];
-
-	const selectedLanguage = $derived(
-		languageOptions.find((option) => option.value === locale)?.label ?? "Language"
-	);
 </script>
 
 <Card.Root>
@@ -46,11 +42,13 @@
 		<Card.Action>
 			<Select.Root type="single" bind:value={locale}>
 				<Select.Trigger class="w-[100px]" aria-label="Select language">
-					{selectedLanguage}
+					<Select.Value placeholder="Language" />
 				</Select.Trigger>
 				<Select.Content align="end">
 					{#each languageOptions as option (option.value)}
-						<Select.Item value={option.value}>{option.label}</Select.Item>
+						<Select.Item value={option.value} label={option.label}
+							>{option.label}</Select.Item
+						>
 					{/each}
 				</Select.Content>
 			</Select.Root>

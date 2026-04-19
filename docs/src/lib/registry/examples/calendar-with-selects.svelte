@@ -44,10 +44,6 @@
 				}
 			: undefined
 	);
-
-	const monthLabel = $derived(
-		monthOptions.find((m) => m.value === defaultMonth?.value)?.label ?? "Select a month"
-	);
 </script>
 
 <CalendarPrimitive.Root
@@ -69,7 +65,7 @@
 				}}
 			>
 				<Select.Trigger aria-label="Select month" class="w-[60%]">
-					{monthLabel}
+					<Select.Value placeholder="Select a month" />
 				</Select.Trigger>
 				<Select.Content class="max-h-[200px] overflow-y-auto">
 					{#each monthOptions as { value, label } (value)}
@@ -87,7 +83,7 @@
 				}}
 			>
 				<Select.Trigger aria-label="Select year" class="w-[40%]">
-					{defaultYear?.label ?? "Select year"}
+					<Select.Value placeholder="Select year" />
 				</Select.Trigger>
 				<Select.Content class="max-h-[200px] overflow-y-auto">
 					{#each yearOptions as { value, label } (value)}

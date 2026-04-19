@@ -45,10 +45,6 @@
 			triggerRef.focus();
 		});
 	}
-
-	const roleLabel = $derived(
-		roleItems.find((item) => item.value === role)?.label ?? "Select role"
-	);
 </script>
 
 <Example title="Form">
@@ -355,12 +351,12 @@
 							<Field.Label for="small-form-role">Role</Field.Label>
 							<Select.Root type="single" bind:value={role}>
 								<Select.Trigger id="small-form-role">
-									{roleLabel}
+									<Select.Value placeholder="Select role" />
 								</Select.Trigger>
 								<Select.Content>
 									<Select.Group>
 										{#each roleItems as item (item.value)}
-											<Select.Item value={item.value}
+											<Select.Item value={item.value} label={item.label}
 												>{item.label}</Select.Item
 											>
 										{/each}

@@ -219,11 +219,11 @@
 					}}
 				>
 					<Select.Trigger class="h-8 w-[70px]">
-						{String(table.getState().pagination.pageSize)}
+						<Select.Value />
 					</Select.Trigger>
 					<Select.Content side="top">
 						{#each [10, 20, 30, 40, 50] as pageSize (pageSize)}
-							<Select.Item value={`${pageSize}`}>
+							<Select.Item value={`${pageSize}`} label={`${pageSize}`}>
 								{pageSize}
 							</Select.Item>
 						{/each}

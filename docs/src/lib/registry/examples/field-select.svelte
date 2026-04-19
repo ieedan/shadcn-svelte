@@ -14,10 +14,6 @@
 		{ value: "finance", label: "Finance" },
 		{ value: "operations", label: "Operations" },
 	];
-
-	const departmentLabel = $derived(
-		departments.find((d) => d.value === department)?.label ?? "Choose department"
-	);
 </script>
 
 <div class="w-full max-w-md">
@@ -25,7 +21,7 @@
 		<Field.Label for="department">Department</Field.Label>
 		<Select.Root type="single" bind:value={department}>
 			<Select.Trigger id="department">
-				{departmentLabel}
+				<Select.Value placeholder="Choose department" />
 			</Select.Trigger>
 			<Select.Content>
 				{#each departments as department (department.value)}

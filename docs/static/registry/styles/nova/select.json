@@ -3,7 +3,7 @@
 	"name": "select",
 	"type": "registry:ui",
 	"devDependencies": [
-		"bits-ui@^2.16.3",
+		"bits-ui@^2.18.0",
 		"@internationalized/date@^3.12.0"
 	],
 	"registryDependencies": [
@@ -11,7 +11,7 @@
 	],
 	"files": [
 		{
-			"content": "import Root from \"./select.svelte\";\nimport Group from \"./select-group.svelte\";\nimport Label from \"./select-label.svelte\";\nimport Item from \"./select-item.svelte\";\nimport Content from \"./select-content.svelte\";\nimport Trigger from \"./select-trigger.svelte\";\nimport Separator from \"./select-separator.svelte\";\nimport ScrollDownButton from \"./select-scroll-down-button.svelte\";\nimport ScrollUpButton from \"./select-scroll-up-button.svelte\";\nimport GroupHeading from \"./select-group-heading.svelte\";\nimport Portal from \"./select-portal.svelte\";\n\nexport {\n\tRoot,\n\tGroup,\n\tLabel,\n\tItem,\n\tContent,\n\tTrigger,\n\tSeparator,\n\tScrollDownButton,\n\tScrollUpButton,\n\tGroupHeading,\n\tPortal,\n\t//\n\tRoot as Select,\n\tGroup as SelectGroup,\n\tLabel as SelectLabel,\n\tItem as SelectItem,\n\tContent as SelectContent,\n\tTrigger as SelectTrigger,\n\tSeparator as SelectSeparator,\n\tScrollDownButton as SelectScrollDownButton,\n\tScrollUpButton as SelectScrollUpButton,\n\tGroupHeading as SelectGroupHeading,\n\tPortal as SelectPortal,\n};\n",
+			"content": "import Root from \"./select.svelte\";\nimport Group from \"./select-group.svelte\";\nimport Label from \"./select-label.svelte\";\nimport Item from \"./select-item.svelte\";\nimport Content from \"./select-content.svelte\";\nimport Trigger from \"./select-trigger.svelte\";\nimport Value from \"./select-value.svelte\";\nimport Separator from \"./select-separator.svelte\";\nimport ScrollDownButton from \"./select-scroll-down-button.svelte\";\nimport ScrollUpButton from \"./select-scroll-up-button.svelte\";\nimport GroupHeading from \"./select-group-heading.svelte\";\nimport Portal from \"./select-portal.svelte\";\n\nexport {\n\tRoot,\n\tGroup,\n\tLabel,\n\tItem,\n\tContent,\n\tTrigger,\n\tValue,\n\tSeparator,\n\tScrollDownButton,\n\tScrollUpButton,\n\tGroupHeading,\n\tPortal,\n\t//\n\tRoot as Select,\n\tGroup as SelectGroup,\n\tLabel as SelectLabel,\n\tItem as SelectItem,\n\tContent as SelectContent,\n\tTrigger as SelectTrigger,\n\tValue as SelectValue,\n\tSeparator as SelectSeparator,\n\tScrollDownButton as SelectScrollDownButton,\n\tScrollUpButton as SelectScrollUpButton,\n\tGroupHeading as SelectGroupHeading,\n\tPortal as SelectPortal,\n};\n",
 			"type": "registry:file",
 			"target": "select/index.ts"
 		},
@@ -64,6 +64,11 @@
 			"content": "<script lang=\"ts\">\n\timport { Select as SelectPrimitive } from \"bits-ui\";\n\timport { cn, type WithoutChild } from \"$UTILS$.js\";\n\timport IconPlaceholder from \"$lib/components/icon-placeholder/icon-placeholder.svelte\";\n\n\tlet {\n\t\tref = $bindable(null),\n\t\tclass: className,\n\t\tchildren,\n\t\tsize = \"default\",\n\t\t...restProps\n\t}: WithoutChild<SelectPrimitive.TriggerProps> & {\n\t\tsize?: \"sm\" | \"default\";\n\t} = $props();\n</script>\n\n<SelectPrimitive.Trigger\n\tbind:ref\n\tdata-slot=\"select-trigger\"\n\tdata-size={size}\n\tclass={cn(\n\t\t\"border-input data-placeholder:text-muted-foreground dark:bg-input/30 dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 gap-1.5 rounded-lg border bg-transparent py-2 pr-2 pl-2.5 text-sm transition-colors select-none focus-visible:ring-3 aria-invalid:ring-3 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:flex *:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 flex w-fit items-center justify-between whitespace-nowrap outline-none disabled:cursor-not-allowed disabled:opacity-50 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center [&_svg]:pointer-events-none [&_svg]:shrink-0\",\n\t\tclassName\n\t)}\n\t{...restProps}\n>\n\t{@render children?.()}\n\t<IconPlaceholder\n\t\tlucide=\"ChevronDownIcon\"\n\t\ttabler=\"IconSelector\"\n\t\thugeicons=\"UnfoldMoreIcon\"\n\t\tphosphor=\"CaretDownIcon\"\n\t\tremixicon=\"RiArrowDownSLine\"\n\t\tclass=\"text-muted-foreground size-4 pointer-events-none\"\n\t/>\n</SelectPrimitive.Trigger>\n",
 			"type": "registry:file",
 			"target": "select/select-trigger.svelte"
+		},
+		{
+			"content": "<script lang=\"ts\">\n\timport { Select as SelectPrimitive } from \"bits-ui\";\n\n\tlet { ref = $bindable(null), ...restProps }: SelectPrimitive.ValueProps = $props();\n</script>\n\n<SelectPrimitive.Value bind:ref data-slot=\"select-value\" {...restProps} />\n",
+			"type": "registry:file",
+			"target": "select/select-value.svelte"
 		},
 		{
 			"content": "<script lang=\"ts\">\n\timport { Select as SelectPrimitive } from \"bits-ui\";\n\n\tlet {\n\t\topen = $bindable(false),\n\t\tvalue = $bindable(),\n\t\t...restProps\n\t}: SelectPrimitive.RootProps = $props();\n</script>\n\n<SelectPrimitive.Root bind:open bind:value={value as never} {...restProps} />\n",

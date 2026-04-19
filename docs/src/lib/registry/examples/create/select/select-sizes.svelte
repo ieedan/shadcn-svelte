@@ -10,36 +10,32 @@
 
 	let selectedValueSm = $state<string | undefined>(undefined);
 	let selectedValueDefault = $state<string | undefined>(undefined);
-	const selectedLabelSm = $derived(
-		items.find((item) => item.value === selectedValueSm)?.label ?? "Small size"
-	);
-	const selectedLabelDefault = $derived(
-		items.find((item) => item.value === selectedValueDefault)?.label ?? "Default size"
-	);
 </script>
 
 <Example title="Sizes">
 	<div class="flex flex-col gap-4">
 		<Select.Root type="single" bind:value={selectedValueSm}>
 			<Select.Trigger size="sm">
-				{selectedLabelSm}
+				<Select.Value placeholder="Small size" />
 			</Select.Trigger>
 			<Select.Content>
 				<Select.Group>
 					{#each items as item (item.value)}
-						<Select.Item value={item.value}>{item.label}</Select.Item>
+						<Select.Item value={item.value} label={item.label}>{item.label}</Select.Item
+						>
 					{/each}
 				</Select.Group>
 			</Select.Content>
 		</Select.Root>
 		<Select.Root type="single" bind:value={selectedValueDefault}>
 			<Select.Trigger size="default">
-				{selectedLabelDefault}
+				<Select.Value placeholder="Default size" />
 			</Select.Trigger>
 			<Select.Content>
 				<Select.Group>
 					{#each items as item (item.value)}
-						<Select.Item value={item.value}>{item.label}</Select.Item>
+						<Select.Item value={item.value} label={item.label}>{item.label}</Select.Item
+						>
 					{/each}
 				</Select.Group>
 			</Select.Content>

@@ -125,23 +125,31 @@
 						<Label for="type">Type</Label>
 						<Select.Root type="single" bind:value={type}>
 							<Select.Trigger id="type" class="w-full">
-								{type ?? "Select a type"}
+								<Select.Value placeholder="Select a type" />
 							</Select.Trigger>
 							<Select.Content>
-								<Select.Item value="Table of Contents"
+								<Select.Item value="Table of Contents" label="Table of Contents"
 									>Table of Contents</Select.Item
 								>
-								<Select.Item value="Executive Summary"
+								<Select.Item value="Executive Summary" label="Executive Summary"
 									>Executive Summary</Select.Item
 								>
-								<Select.Item value="Technical Approach">
+								<Select.Item value="Technical Approach" label="Technical Approach">
 									Technical Approach
 								</Select.Item>
-								<Select.Item value="Design">Design</Select.Item>
-								<Select.Item value="Capabilities">Capabilities</Select.Item>
-								<Select.Item value="Focus Documents">Focus Documents</Select.Item>
-								<Select.Item value="Narrative">Narrative</Select.Item>
-								<Select.Item value="Cover Page">Cover Page</Select.Item>
+								<Select.Item value="Design" label="Design">Design</Select.Item>
+								<Select.Item value="Capabilities" label="Capabilities"
+									>Capabilities</Select.Item
+								>
+								<Select.Item value="Focus Documents" label="Focus Documents"
+									>Focus Documents</Select.Item
+								>
+								<Select.Item value="Narrative" label="Narrative"
+									>Narrative</Select.Item
+								>
+								<Select.Item value="Cover Page" label="Cover Page"
+									>Cover Page</Select.Item
+								>
 							</Select.Content>
 						</Select.Root>
 					</div>
@@ -149,12 +157,16 @@
 						<Label for="status">Status</Label>
 						<Select.Root type="single" bind:value={status}>
 							<Select.Trigger id="status" class="w-full">
-								{status ?? "Select a status"}
+								<Select.Value placeholder="Select a status" />
 							</Select.Trigger>
 							<Select.Content>
-								<Select.Item value="Done">Done</Select.Item>
-								<Select.Item value="In Progress">In Progress</Select.Item>
-								<Select.Item value="Not Started">Not Started</Select.Item>
+								<Select.Item value="Done" label="Done">Done</Select.Item>
+								<Select.Item value="In Progress" label="In Progress"
+									>In Progress</Select.Item
+								>
+								<Select.Item value="Not Started" label="Not Started"
+									>Not Started</Select.Item
+								>
 							</Select.Content>
 						</Select.Root>
 					</div>
@@ -173,12 +185,18 @@
 					<Label for="reviewer">Reviewer</Label>
 					<Select.Root type="single" bind:value={reviewer}>
 						<Select.Trigger id="reviewer" class="w-full">
-							{reviewer ?? "Select a reviewer"}
+							<Select.Value placeholder="Select a reviewer" />
 						</Select.Trigger>
 						<Select.Content>
-							<Select.Item value="Eddie Lake">Eddie Lake</Select.Item>
-							<Select.Item value="Jamik Tashpulatov">Jamik Tashpulatov</Select.Item>
-							<Select.Item value="Emily Whalen">Emily Whalen</Select.Item>
+							<Select.Item value="Eddie Lake" label="Eddie Lake"
+								>Eddie Lake</Select.Item
+							>
+							<Select.Item value="Jamik Tashpulatov" label="Jamik Tashpulatov"
+								>Jamik Tashpulatov</Select.Item
+							>
+							<Select.Item value="Emily Whalen" label="Emily Whalen"
+								>Emily Whalen</Select.Item
+							>
 						</Select.Content>
 					</Select.Root>
 				</div>

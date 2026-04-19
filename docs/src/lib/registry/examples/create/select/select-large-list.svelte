@@ -10,20 +10,17 @@
 	];
 
 	let selectedValue = $state<string | undefined>(undefined);
-	const selectedLabel = $derived(
-		items.find((item) => item.value === selectedValue)?.label ?? "Select an item"
-	);
 </script>
 
 <Example title="Large List">
 	<Select.Root type="single" bind:value={selectedValue}>
 		<Select.Trigger>
-			{selectedLabel}
+			<Select.Value placeholder="Select an item" />
 		</Select.Trigger>
 		<Select.Content>
 			<Select.Group>
 				{#each items as item (item.value)}
-					<Select.Item value={item.value}>{item.label}</Select.Item>
+					<Select.Item value={item.value} label={item.label}>{item.label}</Select.Item>
 				{/each}
 			</Select.Group>
 		</Select.Content>

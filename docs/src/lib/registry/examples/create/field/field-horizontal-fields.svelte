@@ -16,9 +16,6 @@
 	];
 
 	let fruitValue = $state<string | undefined>(undefined);
-	const fruitLabel = $derived(
-		basicItems.find((item) => item.value === fruitValue)?.label ?? "Select a fruit"
-	);
 </script>
 
 <Example title="Horizontal Fields">
@@ -50,11 +47,15 @@
 				<Field.Description>Choose your favorite fruit.</Field.Description>
 			</Field.Content>
 			<Select.Root type="single" bind:value={fruitValue}>
-				<Select.Trigger id="horizontal-select">{fruitLabel}</Select.Trigger>
+				<Select.Trigger id="horizontal-select">
+					<Select.Value placeholder="Select a fruit" />
+				</Select.Trigger>
 				<Select.Content>
 					<Select.Group>
 						{#each basicItems.filter((i) => i.value !== undefined) as item (item.value)}
-							<Select.Item value={item.value!}>{item.label}</Select.Item>
+							<Select.Item value={item.value!} label={item.label}
+								>{item.label}</Select.Item
+							>
 						{/each}
 					</Select.Group>
 				</Select.Content>

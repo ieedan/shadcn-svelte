@@ -35,23 +35,21 @@
 							<Field.Label for="checkout-exp-month-ts6">Month</Field.Label>
 							<Select.Root type="single" bind:value={month}>
 								<Select.Trigger id="checkout-exp-month-ts6">
-									<span>
-										{month || "MM"}
-									</span>
+									<Select.Value placeholder="MM" />
 								</Select.Trigger>
 								<Select.Content>
-									<Select.Item value="01">01</Select.Item>
-									<Select.Item value="02">02</Select.Item>
-									<Select.Item value="03">03</Select.Item>
-									<Select.Item value="04">04</Select.Item>
-									<Select.Item value="05">05</Select.Item>
-									<Select.Item value="06">06</Select.Item>
-									<Select.Item value="07">07</Select.Item>
-									<Select.Item value="08">08</Select.Item>
-									<Select.Item value="09">09</Select.Item>
-									<Select.Item value="10">10</Select.Item>
-									<Select.Item value="11">11</Select.Item>
-									<Select.Item value="12">12</Select.Item>
+									<Select.Item value="01" label="01">01</Select.Item>
+									<Select.Item value="02" label="02">02</Select.Item>
+									<Select.Item value="03" label="03">03</Select.Item>
+									<Select.Item value="04" label="04">04</Select.Item>
+									<Select.Item value="05" label="05">05</Select.Item>
+									<Select.Item value="06" label="06">06</Select.Item>
+									<Select.Item value="07" label="07">07</Select.Item>
+									<Select.Item value="08" label="08">08</Select.Item>
+									<Select.Item value="09" label="09">09</Select.Item>
+									<Select.Item value="10" label="10">10</Select.Item>
+									<Select.Item value="11" label="11">11</Select.Item>
+									<Select.Item value="12" label="12">12</Select.Item>
 								</Select.Content>
 							</Select.Root>
 						</Field.Field>
@@ -59,17 +57,15 @@
 							<Field.Label for="checkout-7j9-exp-year-f59">Year</Field.Label>
 							<Select.Root type="single" bind:value={year}>
 								<Select.Trigger id="checkout-7j9-exp-year-f59">
-									<span>
-										{year || "YYYY"}
-									</span>
+									<Select.Value placeholder="YYYY" />
 								</Select.Trigger>
 								<Select.Content>
-									<Select.Item value="2024">2024</Select.Item>
-									<Select.Item value="2025">2025</Select.Item>
-									<Select.Item value="2026">2026</Select.Item>
-									<Select.Item value="2027">2027</Select.Item>
-									<Select.Item value="2028">2028</Select.Item>
-									<Select.Item value="2029">2029</Select.Item>
+									<Select.Item value="2024" label="2024">2024</Select.Item>
+									<Select.Item value="2025" label="2025">2025</Select.Item>
+									<Select.Item value="2026" label="2026">2026</Select.Item>
+									<Select.Item value="2027" label="2027">2027</Select.Item>
+									<Select.Item value="2028" label="2028">2028</Select.Item>
+									<Select.Item value="2029" label="2029">2029</Select.Item>
 								</Select.Content>
 							</Select.Root>
 						</Field.Field>

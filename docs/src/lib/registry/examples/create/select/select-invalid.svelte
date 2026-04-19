@@ -13,24 +13,19 @@
 
 	let selectedValue = $state<string | undefined>(undefined);
 	let selectedValueInvalid = $state<string | undefined>(undefined);
-	const selectedLabel = $derived(
-		items.find((item) => item.value === selectedValue)?.label ?? "Select a fruit"
-	);
-	const selectedLabelInvalid = $derived(
-		items.find((item) => item.value === selectedValueInvalid)?.label ?? "Select a fruit"
-	);
 </script>
 
 <Example title="Invalid">
 	<div class="flex flex-col gap-4">
 		<Select.Root type="single" bind:value={selectedValue}>
 			<Select.Trigger aria-invalid="true">
-				{selectedLabel}
+				<Select.Value placeholder="Select a fruit" />
 			</Select.Trigger>
 			<Select.Content>
 				<Select.Group>
 					{#each items as item (item.value)}
-						<Select.Item value={item.value}>{item.label}</Select.Item>
+						<Select.Item value={item.value} label={item.label}>{item.label}</Select.Item
+						>
 					{/each}
 				</Select.Group>
 			</Select.Content>
@@ -39,12 +34,14 @@
 			<Field.Label for="select-fruit-invalid">Favorite Fruit</Field.Label>
 			<Select.Root type="single" bind:value={selectedValueInvalid}>
 				<Select.Trigger id="select-fruit-invalid" aria-invalid>
-					{selectedLabelInvalid}
+					<Select.Value placeholder="Select a fruit" />
 				</Select.Trigger>
 				<Select.Content>
 					<Select.Group>
 						{#each items as item (item.value)}
-							<Select.Item value={item.value}>{item.label}</Select.Item>
+							<Select.Item value={item.value} label={item.label}
+								>{item.label}</Select.Item
+							>
 						{/each}
 					</Select.Group>
 				</Select.Content>

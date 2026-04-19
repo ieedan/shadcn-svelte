@@ -103,19 +103,6 @@
 
 	let timeRange = $state("90d");
 
-	const selectedLabel = $derived.by(() => {
-		switch (timeRange) {
-			case "90d":
-				return "Last 3 months";
-			case "30d":
-				return "Last 30 days";
-			case "7d":
-				return "Last 7 days";
-			default:
-				return "Last 3 months";
-		}
-	});
-
 	const filteredData = $derived(
 		chartData.filter((item) => {
 			// eslint-disable-next-line svelte/prefer-svelte-reactivity
@@ -162,14 +149,18 @@
 					class="flex w-40 **:data-[slot=select-value]:block **:data-[slot=select-value]:truncate @[767px]/card:hidden"
 					aria-label="Select a value"
 				>
-					<span data-slot="select-value">
-						{selectedLabel}
-					</span>
+					<Select.Value placeholder="Last 3 months" />
 				</Select.Trigger>
 				<Select.Content class="rounded-xl">
-					<Select.Item value="90d" class="rounded-lg">Last 3 months</Select.Item>
-					<Select.Item value="30d" class="rounded-lg">Last 30 days</Select.Item>
-					<Select.Item value="7d" class="rounded-lg">Last 7 days</Select.Item>
+					<Select.Item value="90d" label="Last 3 months" class="rounded-lg"
+						>Last 3 months</Select.Item
+					>
+					<Select.Item value="30d" label="Last 30 days" class="rounded-lg"
+						>Last 30 days</Select.Item
+					>
+					<Select.Item value="7d" label="Last 7 days" class="rounded-lg"
+						>Last 7 days</Select.Item
+					>
 				</Select.Content>
 			</Select.Root>
 		</Card.Action>

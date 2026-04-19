@@ -52,9 +52,6 @@
 
 	let area = $state("billing");
 	let level = $state("2");
-
-	const areaLabel = $derived(areas.find((a) => a.value === area)?.label ?? "Select");
-	const levelLabel = $derived(levels.find((l) => l.value === level)?.label ?? "Select Level");
 </script>
 
 <Card.Root>
@@ -69,11 +66,13 @@
 					<Field.Label for="area-{id}">Area</Field.Label>
 					<Select.Root type="single" bind:value={area}>
 						<Select.Trigger id="area-{id}" aria-label="Area" class="w-full">
-							{areaLabel}
+							<Select.Value placeholder="Select" />
 						</Select.Trigger>
 						<Select.Content>
 							{#each areas as area (area.value)}
-								<Select.Item value={area.value}>{area.label}</Select.Item>
+								<Select.Item value={area.value} label={area.label}
+									>{area.label}</Select.Item
+								>
 							{/each}
 						</Select.Content>
 					</Select.Root>
@@ -86,13 +85,13 @@
 							class="w-full [&_span]:!block [&_span]:truncate"
 							aria-label="Security Level"
 						>
-							<span>
-								{levelLabel}
-							</span>
+							<Select.Value placeholder="Select Level" />
 						</Select.Trigger>
 						<Select.Content>
 							{#each levels as level (level.value)}
-								<Select.Item value={level.value}>{level.label}</Select.Item>
+								<Select.Item value={level.value} label={level.label}
+									>{level.label}</Select.Item
+								>
 							{/each}
 						</Select.Content>
 					</Select.Root>

@@ -33,9 +33,6 @@
 	];
 
 	let categoryValue = $state<string>("general");
-	const categoryLabel = $derived(
-		categoryItems.find((item) => item.value === categoryValue)?.label ?? "General"
-	);
 </script>
 
 <Card.Root>
@@ -80,13 +77,15 @@
 					<Field.Field>
 						<Field.Label for="feedback-category">Category</Field.Label>
 						<Select.Root type="single" bind:value={categoryValue}>
-							<Select.Trigger id="feedback-category" class="w-full"
-								>{categoryLabel}</Select.Trigger
-							>
+							<Select.Trigger id="feedback-category" class="w-full">
+								<Select.Value placeholder="General" />
+							</Select.Trigger>
 							<Select.Content>
 								<Select.Group>
 									{#each categoryItems as item (item.value)}
-										<Select.Item value={item.value}>{item.label}</Select.Item>
+										<Select.Item value={item.value} label={item.label}
+											>{item.label}</Select.Item
+										>
 									{/each}
 								</Select.Group>
 							</Select.Content>

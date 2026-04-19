@@ -38,12 +38,14 @@
 				<Field.Label for="default-currency">Default Currency</Field.Label>
 				<Select.Root type="single" bind:value={currency}>
 					<Select.Trigger id="default-currency" class="w-full">
-						{CURRENCIES.find((c) => c.value === currency)?.label}
+						<Select.Value placeholder="Select currency" />
 					</Select.Trigger>
 					<Select.Content>
 						<Select.Group>
 							{#each CURRENCIES as item (item.value)}
-								<Select.Item value={item.value}>{item.label}</Select.Item>
+								<Select.Item value={item.value} label={item.label}
+									>{item.label}</Select.Item
+								>
 							{/each}
 						</Select.Group>
 					</Select.Content>

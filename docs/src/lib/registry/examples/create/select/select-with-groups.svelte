@@ -13,29 +13,25 @@
 		{ label: "Spinach", value: "spinach" },
 	];
 	let selectedValue = $state<string | undefined>(undefined);
-	const selectedLabel = $derived(
-		[...fruits, ...vegetables].find((item) => item.value === selectedValue)?.label ??
-			"Select a fruit"
-	);
 </script>
 
 <Example title="With Groups & Labels">
 	<Select.Root type="single" bind:value={selectedValue}>
 		<Select.Trigger>
-			{selectedLabel}
+			<Select.Value placeholder="Select a fruit" />
 		</Select.Trigger>
 		<Select.Content>
 			<Select.Group>
 				<Select.Label>Fruits</Select.Label>
 				{#each fruits as item (item.value)}
-					<Select.Item value={item.value}>{item.label}</Select.Item>
+					<Select.Item value={item.value} label={item.label}>{item.label}</Select.Item>
 				{/each}
 			</Select.Group>
 			<Select.Separator />
 			<Select.Group>
 				<Select.Label>Vegetables</Select.Label>
 				{#each vegetables as item (item.value)}
-					<Select.Item value={item.value}>{item.label}</Select.Item>
+					<Select.Item value={item.value} label={item.label}>{item.label}</Select.Item>
 				{/each}
 			</Select.Group>
 		</Select.Content>

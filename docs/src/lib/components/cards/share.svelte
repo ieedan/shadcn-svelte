@@ -79,12 +79,14 @@
 						<Item.Actions>
 							<Select.Root type="single" bind:value={person.permission}>
 								<Select.Trigger class="ms-auto pe-2" size="sm" aria-label="Edit">
-									{permissions.find((p) => p.value === person.permission)
-										?.label ?? "Select"}
+									<Select.Value placeholder="Select" />
 								</Select.Trigger>
 								<Select.Content align="end">
 									{#each permissions as permission (permission.value)}
-										<Select.Item value={permission.value}>
+										<Select.Item
+											value={permission.value}
+											label={permission.label}
+										>
 											{permission.label}
 										</Select.Item>
 									{/each}

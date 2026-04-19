@@ -210,7 +210,6 @@
 	];
 
 	let view = $state("outline");
-	let viewLabel = $derived(views.find((v) => view === v.id)?.label ?? "Select a view");
 </script>
 
 <Tabs.Root value="outline" class="w-full flex-col justify-start gap-6">
@@ -218,11 +217,11 @@
 		<Label for="view-selector" class="sr-only">View</Label>
 		<Select.Root type="single" bind:value={view}>
 			<Select.Trigger class="flex w-fit @4xl/main:hidden" size="sm" id="view-selector">
-				{viewLabel}
+				<Select.Value placeholder="Select a view" />
 			</Select.Trigger>
 			<Select.Content>
 				{#each views as view (view.id)}
-					<Select.Item value={view.id}>{view.label}</Select.Item>
+					<Select.Item value={view.id} label={view.label}>{view.label}</Select.Item>
 				{/each}
 			</Select.Content>
 		</Select.Root>
@@ -328,11 +327,14 @@
 						}
 					>
 						<Select.Trigger size="sm" class="w-20" id="rows-per-page">
-							{table.getState().pagination.pageSize}
+							<Select.Value />
 						</Select.Trigger>
 						<Select.Content side="top">
 							{#each [10, 20, 30, 40, 50] as pageSize (pageSize)}
-								<Select.Item value={pageSize.toString()}>
+								<Select.Item
+									value={pageSize.toString()}
+									label={pageSize.toString()}
+								>
 									{pageSize}
 								</Select.Item>
 							{/each}

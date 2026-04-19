@@ -15,9 +15,6 @@
 	];
 
 	let currency = $state(currencyItems[0].value);
-	const currencyLabel = $derived(
-		currencyItems.find((item) => item.value === currency)?.label ?? "$"
-	);
 </script>
 
 <Example title="With Select">
@@ -26,7 +23,7 @@
 		<ButtonGroup>
 			<Select.Root type="single" bind:value={currency}>
 				<Select.Trigger>
-					{currencyLabel}
+					<Select.Value placeholder="$" />
 				</Select.Trigger>
 				<Select.Content>
 					<Select.Group>

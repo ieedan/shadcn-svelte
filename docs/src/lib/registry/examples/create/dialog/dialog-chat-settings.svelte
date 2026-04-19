@@ -66,13 +66,6 @@
 	let accentColor = $state("default");
 	let spokenLanguage = $state("en");
 	let voice = $state("samantha");
-
-	const themeLabel = $derived(themes.find((t) => t.value === theme)?.label ?? "System");
-	const accentLabel = $derived(accents.find((a) => a.value === accentColor)?.label ?? "Default");
-	const spokenLanguageLabel = $derived(
-		spokenLanguages.find((l) => l.value === spokenLanguage)?.label ?? "English"
-	);
-	const voiceLabel = $derived(voices.find((v) => v.value === voice)?.label ?? "Samantha");
 </script>
 
 <Example title="Chat Settings" class="items-center justify-center">
@@ -116,12 +109,15 @@
 										<Field.Label for="theme">Theme</Field.Label>
 										<Select.Root type="single" bind:value={theme}>
 											<Select.Trigger id="theme">
-												{themeLabel}
+												<Select.Value placeholder="System" />
 											</Select.Trigger>
 											<Select.Content align="end">
 												<Select.Group>
 													{#each themes as themeItem (themeItem.value)}
-														<Select.Item value={themeItem.value}>
+														<Select.Item
+															value={themeItem.value}
+															label={themeItem.label}
+														>
 															{themeItem.label}
 														</Select.Item>
 													{/each}
@@ -134,12 +130,15 @@
 										<Field.Label for="accent-color">Accent Color</Field.Label>
 										<Select.Root type="single" bind:value={accentColor}>
 											<Select.Trigger id="accent-color">
-												{accentLabel}
+												<Select.Value placeholder="Default" />
 											</Select.Trigger>
 											<Select.Content align="end">
 												<Select.Group>
 													{#each accents as accent (accent.value)}
-														<Select.Item value={accent.value}>
+														<Select.Item
+															value={accent.value}
+															label={accent.label}
+														>
 															{accent.label}
 														</Select.Item>
 													{/each}
@@ -161,12 +160,15 @@
 										</Field.Content>
 										<Select.Root type="single" bind:value={spokenLanguage}>
 											<Select.Trigger id="spoken-language">
-												{spokenLanguageLabel}
+												<Select.Value placeholder="English" />
 											</Select.Trigger>
 											<Select.Content align="end">
 												<Select.Group>
 													{#each spokenLanguages as language (language.value)}
-														<Select.Item value={language.value}>
+														<Select.Item
+															value={language.value}
+															label={language.label}
+														>
 															{language.label}
 														</Select.Item>
 													{/each}
@@ -179,12 +181,15 @@
 										<Field.Label for="voice">Voice</Field.Label>
 										<Select.Root type="single" bind:value={voice}>
 											<Select.Trigger id="voice">
-												{voiceLabel}
+												<Select.Value placeholder="Samantha" />
 											</Select.Trigger>
 											<Select.Content align="end">
 												<Select.Group>
 													{#each voices as voiceItem (voiceItem.value)}
-														<Select.Item value={voiceItem.value}>
+														<Select.Item
+															value={voiceItem.value}
+															label={voiceItem.label}
+														>
 															{voiceItem.label}
 														</Select.Item>
 													{/each}

@@ -40,19 +40,17 @@
 		</Table.Header>
 		<Table.Body>
 			{#each tasks as item (item.task)}
-				{@const assigneePerson = people.find((person) => person.value === item.assignee)}
-				{@const assigneeLabel = assigneePerson?.label ?? ""}
 				<Table.Row>
 					<Table.Cell class="font-medium">{item.task}</Table.Cell>
 					<Table.Cell>
 						<Select.Root type="single" value={item.assignee}>
 							<Select.Trigger class="w-40" size="sm">
-								{assigneeLabel}
+								<Select.Value placeholder="Select assignee" />
 							</Select.Trigger>
 							<Select.Content>
 								<Select.Group>
 									{#each people as person (person.value)}
-										<Select.Item value={person.value}
+										<Select.Item value={person.value} label={person.label}
 											>{person.label}</Select.Item
 										>
 									{/each}

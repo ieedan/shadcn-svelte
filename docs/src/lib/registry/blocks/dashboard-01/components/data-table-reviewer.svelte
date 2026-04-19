@@ -20,13 +20,13 @@
 			size="sm"
 			id="{row.original.id}-reviewer"
 		>
-			<span data-slot="select-value">
-				{reviewer ?? "Assign reviewer"}
-			</span>
+			<Select.Value placeholder="Assign reviewer" />
 		</Select.Trigger>
 		<Select.Content align="end">
-			<Select.Item value="Eddie Lake">Eddie Lake</Select.Item>
-			<Select.Item value="Jamik Tashpulatov">Jamik Tashpulatov</Select.Item>
+			<Select.Item value="Eddie Lake" label="Eddie Lake">Eddie Lake</Select.Item>
+			<Select.Item value="Jamik Tashpulatov" label="Jamik Tashpulatov"
+				>Jamik Tashpulatov</Select.Item
+			>
 		</Select.Content>
 	</Select.Root>
 {/if}

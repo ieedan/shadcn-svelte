@@ -34,9 +34,6 @@
 
 	let month = $state<string | undefined>(undefined);
 	let year = $state<string | undefined>(undefined);
-
-	const monthLabel = $derived(monthItems.find((item) => item.value === month)?.label ?? "MM");
-	const yearLabel = $derived(yearItems.find((item) => item.value === year)?.label ?? "YYYY");
 </script>
 
 <Example title="Complex Form">
@@ -85,13 +82,14 @@
 									>
 									<Select.Root type="single" bind:value={month}>
 										<Select.Trigger id="checkout-7j9-exp-month-ts6">
-											{monthLabel}
+											<Select.Value placeholder="MM" />
 										</Select.Trigger>
 										<Select.Content>
 											<Select.Group>
 												{#each monthItems as item (item.value)}
-													<Select.Item value={item.value}
-														>{item.label}</Select.Item
+													<Select.Item
+														value={item.value}
+														label={item.label}>{item.label}</Select.Item
 													>
 												{/each}
 											</Select.Group>
@@ -102,13 +100,14 @@
 									<Field.Label for="checkout-7j9-exp-year-f59">Year</Field.Label>
 									<Select.Root type="single" bind:value={year}>
 										<Select.Trigger id="checkout-7j9-exp-year-f59">
-											{yearLabel}
+											<Select.Value placeholder="YYYY" />
 										</Select.Trigger>
 										<Select.Content>
 											<Select.Group>
 												{#each yearItems as item (item.value)}
-													<Select.Item value={item.value}
-														>{item.label}</Select.Item
+													<Select.Item
+														value={item.value}
+														label={item.label}>{item.label}</Select.Item
 													>
 												{/each}
 											</Select.Group>

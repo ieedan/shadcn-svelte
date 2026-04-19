@@ -47,11 +47,13 @@
 					<Field.Label for="shipping-state">State</Field.Label>
 					<Select.Root type="single" bind:value={selectedState}>
 						<Select.Trigger id="shipping-state" class="w-full">
-							{states.find((s) => s.value === selectedState)?.label ?? "Select State"}
+							<Select.Value placeholder="Select State" />
 						</Select.Trigger>
 						<Select.Content>
 							{#each states as state (state.value)}
-								<Select.Item value={state.value}>{state.label}</Select.Item>
+								<Select.Item value={state.value} label={state.label}
+									>{state.label}</Select.Item
+								>
 							{/each}
 						</Select.Content>
 					</Select.Root>
@@ -66,12 +68,13 @@
 					<Field.Label for="shipping-country">Country</Field.Label>
 					<Select.Root type="single" bind:value={selectedCountry}>
 						<Select.Trigger id="shipping-country" class="w-full">
-							{countries.find((c) => c.value === selectedCountry)?.label ??
-								"Select Country"}
+							<Select.Value placeholder="Select Country" />
 						</Select.Trigger>
 						<Select.Content>
 							{#each countries as country (country.value)}
-								<Select.Item value={country.value}>{country.label}</Select.Item>
+								<Select.Item value={country.value} label={country.label}
+									>{country.label}</Select.Item
+								>
 							{/each}
 						</Select.Content>
 					</Select.Root>

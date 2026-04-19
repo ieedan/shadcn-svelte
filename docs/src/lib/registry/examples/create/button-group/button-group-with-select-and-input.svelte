@@ -11,16 +11,13 @@
 	];
 
 	let duration = $state(durationItems[0].value);
-	const durationLabel = $derived(
-		durationItems.find((item) => item.value === duration)?.label ?? "Hours"
-	);
 </script>
 
 <Example title="With Select and Input">
 	<ButtonGroup>
 		<Select.Root type="single" bind:value={duration}>
 			<Select.Trigger id="duration">
-				{durationLabel}
+				<Select.Value placeholder="Hours" />
 			</Select.Trigger>
 			<Select.Content align="start">
 				<Select.Group>

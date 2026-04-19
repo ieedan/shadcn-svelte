@@ -34,22 +34,6 @@
 	let timezoneValue = $state<string | undefined>(undefined);
 	let invalidValue = $state<string | undefined>(undefined);
 	let disabledValue = $state<string | undefined>(undefined);
-
-	const basicLabel = $derived(
-		basicItems.find((item) => item.value === basicValue)?.label ?? "Choose an option"
-	);
-	const countryLabel = $derived(
-		countryItems.find((item) => item.value === countryValue)?.label ?? "Select your country"
-	);
-	const timezoneLabel = $derived(
-		timezoneItems.find((item) => item.value === timezoneValue)?.label ?? "Select timezone"
-	);
-	const invalidLabel = $derived(
-		invalidItems.find((item) => item.value === invalidValue)?.label ?? "This field has an error"
-	);
-	const disabledLabel = $derived(
-		disabledItems.find((item) => item.value === disabledValue)?.label ?? "Cannot select"
-	);
 </script>
 
 <Example title="Select Fields">
@@ -57,11 +41,15 @@
 		<Field.Field>
 			<Field.Label for="select-basic">Basic Select</Field.Label>
 			<Select.Root type="single" bind:value={basicValue}>
-				<Select.Trigger id="select-basic">{basicLabel}</Select.Trigger>
+				<Select.Trigger id="select-basic">
+					<Select.Value placeholder="Choose an option" />
+				</Select.Trigger>
 				<Select.Content>
 					<Select.Group>
 						{#each basicItems as item (item.value)}
-							<Select.Item value={item.value}>{item.label}</Select.Item>
+							<Select.Item value={item.value} label={item.label}
+								>{item.label}</Select.Item
+							>
 						{/each}
 					</Select.Group>
 				</Select.Content>
@@ -70,11 +58,15 @@
 		<Field.Field>
 			<Field.Label for="select-country">Country</Field.Label>
 			<Select.Root type="single" bind:value={countryValue}>
-				<Select.Trigger id="select-country">{countryLabel}</Select.Trigger>
+				<Select.Trigger id="select-country">
+					<Select.Value placeholder="Select your country" />
+				</Select.Trigger>
 				<Select.Content>
 					<Select.Group>
 						{#each countryItems as item (item.value)}
-							<Select.Item value={item.value}>{item.label}</Select.Item>
+							<Select.Item value={item.value} label={item.label}
+								>{item.label}</Select.Item
+							>
 						{/each}
 					</Select.Group>
 				</Select.Content>
@@ -87,11 +79,15 @@
 				>Choose your local timezone for accurate scheduling.</Field.Description
 			>
 			<Select.Root type="single" bind:value={timezoneValue}>
-				<Select.Trigger id="select-timezone">{timezoneLabel}</Select.Trigger>
+				<Select.Trigger id="select-timezone">
+					<Select.Value placeholder="Select timezone" />
+				</Select.Trigger>
 				<Select.Content>
 					<Select.Group>
 						{#each timezoneItems as item (item.value)}
-							<Select.Item value={item.value}>{item.label}</Select.Item>
+							<Select.Item value={item.value} label={item.label}
+								>{item.label}</Select.Item
+							>
 						{/each}
 					</Select.Group>
 				</Select.Content>
@@ -100,11 +96,15 @@
 		<Field.Field data-invalid>
 			<Field.Label for="select-invalid">Invalid Select</Field.Label>
 			<Select.Root type="single" bind:value={invalidValue}>
-				<Select.Trigger id="select-invalid" aria-invalid>{invalidLabel}</Select.Trigger>
+				<Select.Trigger id="select-invalid" aria-invalid>
+					<Select.Value placeholder="This field has an error" />
+				</Select.Trigger>
 				<Select.Content>
 					<Select.Group>
 						{#each invalidItems as item (item.value)}
-							<Select.Item value={item.value}>{item.label}</Select.Item>
+							<Select.Item value={item.value} label={item.label}
+								>{item.label}</Select.Item
+							>
 						{/each}
 					</Select.Group>
 				</Select.Content>
@@ -114,11 +114,15 @@
 		<Field.Field data-disabled>
 			<Field.Label for="select-disabled-field">Disabled Field</Field.Label>
 			<Select.Root type="single" bind:value={disabledValue} disabled>
-				<Select.Trigger id="select-disabled-field">{disabledLabel}</Select.Trigger>
+				<Select.Trigger id="select-disabled-field">
+					<Select.Value placeholder="Cannot select" />
+				</Select.Trigger>
 				<Select.Content>
 					<Select.Group>
 						{#each disabledItems as item (item.value)}
-							<Select.Item value={item.value}>{item.label}</Select.Item>
+							<Select.Item value={item.value} label={item.label}
+								>{item.label}</Select.Item
+							>
 						{/each}
 					</Select.Group>
 				</Select.Content>
